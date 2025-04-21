@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+.modtea-noscroll-container {
+  width: 550px;
+  border: 1px solid transparent;
+  background-color: transparent;
+  position: relative;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.modtea-noscroll-image {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 485px;
+  background: url('https://f2.toyhou.se/file/f2-toyhou-se/images/83206791_z1xVZAdCu5frG3F.png') no-repeat center top;
+  background-size: cover;
+  z-index: 0;
+}
+
+.modtea-noscroll-inner {
+  position: relative;
+  border: 5px solid #69359c;
+  border-image: linear-gradient(to top left, #32174d, #210148, #b57edc, #e6e6fa) 1;
+  padding: 25px;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 150%;
+  font-family: 'Manrope', sans-serif;
+  color: #e6e6fa;
+  margin-top: 480px;
+  background-color: #32174d;
+  z-index: 1;
+}
+
+.modtea-noscroll-inner b {
+  color: #b57edc;
+}
+
+.modtea-noscroll-credit {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+  color: #aaa;
+}
