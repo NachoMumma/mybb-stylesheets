@@ -40,7 +40,6 @@
   line-height: 1.5;
   text-align: justify;
   color: #f8f4fc;
-  text-shadow: 1px 1px 1px #000;
 }
 
 .mod-friends-inner b {
@@ -63,7 +62,7 @@
   height: auto;
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0 0 15px rgba(230, 232, 250, 0.2);
+  /* box-shadow removed */
 }
 
 .mod-friends-credit {
