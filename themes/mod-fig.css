@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,700;1,300&family=Pacifico&display=swap');
+
+.mod-fig-container {
+  width: 618px;
+  background-color: #200d31;
+  border: 2px solid #cea6c8;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.mod-fig-banner {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.mod-fig-inner {
+  padding: 10px 25px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  text-align: justify;
+  color: #cea6e8;
+}
+
+.mod-fig-inner b {
+  color: #E3D3E4;
+  font-weight: 700;
+}
+
+.mod-fig-quote {
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
+  color: #E3D3E4;
+  text-transform: lowercase;
+  text-shadow: 1px 0px #000;
+  margin-bottom: 10px;
+}
+
+.mod-fig-credit {
+  font-size: 10px;
+  text-align: center;
+  color: #aaa;
+  margin-top: 10px;
+}
