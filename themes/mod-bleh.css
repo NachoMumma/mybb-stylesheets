@@ -1,31 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Arial&display=swap');
 
+.mod-bleh-outer {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mod-bleh-image {
+  width: 600px;
+  height: 525px;
+  background: url('https://f2.toyhou.se/file/f2-toyhou-se/images/78867143_AIrBFg2ddnBikpT.png?1712381111') no-repeat center top;
+  background-size: cover;
+  margin-bottom: -120px; /* this lifts the image above the container */
+  z-index: 0;
+}
+
 .mod-bleh-container {
   width: 450px;
   padding: 20px;
   border: 3px solid #210148;
   border-radius: 300px 300px 0 0;
   background-color: rgba(26, 1, 57, 0.75);
-  position: relative;
-  margin: 60px auto 0 auto;
+  margin: 0 auto;
   box-sizing: border-box;
-  text-align: center;
-  overflow: hidden;
-}
-
-.mod-bleh-image {
-  width: 600px;
-  height: 525px;
-  margin: -75px auto -35px auto;
-  background: url('https://f2.toyhou.se/file/f2-toyhou-se/images/78867143_AIrBFg2ddnBikpT.png?1712381111') no-repeat center top;
-  background-size: cover;
+  position: relative;
+  z-index: 1;
 }
 
 .mod-bleh-inner {
   border: 2px solid #69359c;
   border-image: linear-gradient(to bottom, #210148 15%, transparent) 1;
   padding: 25px;
-  margin-top: 0;
   text-align: justify;
   font-size: 14px;
   line-height: 1.5;
