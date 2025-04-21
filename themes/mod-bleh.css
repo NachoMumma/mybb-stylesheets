@@ -9,44 +9,29 @@
   position: relative;
   margin: 60px auto 0 auto;
   box-sizing: border-box;
+  text-align: center;
   overflow: hidden;
-  box-shadow: 0 0 10px rgba(147, 112, 219, 0.2);
 }
 
 .mod-bleh-image {
-  position: absolute;
-  top: -75px;
-  left: 50%;
-  transform: translateX(-50%);
   width: 600px;
   height: 525px;
+  margin: -75px auto -35px auto;
   background: url('https://f2.toyhou.se/file/f2-toyhou-se/images/78867143_AIrBFg2ddnBikpT.png?1712381111') no-repeat center top;
   background-size: cover;
-  opacity: 0;
-  animation: mod-bleh-fadeIn 1.5s ease-out 0.25s forwards;
-  z-index: 0;
-}
-
-@keyframes mod-bleh-fadeIn {
-  to {
-    opacity: 1;
-  }
 }
 
 .mod-bleh-inner {
-  position: relative;
   border: 2px solid #69359c;
   border-image: linear-gradient(to bottom, #210148 15%, transparent) 1;
   padding: 25px;
-  margin-top: 415px;
+  margin-top: 0;
   text-align: justify;
   font-size: 14px;
   line-height: 1.5;
   font-family: Arial, sans-serif;
   color: #eedeff;
-  z-index: 1;
-  background-color: rgba(33, 1, 72, 0.3);
-  backdrop-filter: blur(2px);
+  background-color: transparent;
 }
 
 .mod-bleh-inner b {
