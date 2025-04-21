@@ -1,0 +1,37 @@
+.mod-space-container {
+  width: 600px;
+  padding: 20px 20px 450px 20px;
+  border: 2px solid #FF007F;
+  border-radius: 0px 0px 300px 300px;
+  background: url('https://f2.toyhou.se/file/f2-toyhou-se/images/90804735_kDlxQDO2bZ1kwSk.png') no-repeat center bottom;
+  background-size: 600px auto;
+  background-color: #0d0d0c;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.mod-space-inner {
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-top: none;
+  border-bottom: none;
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(transparent 0%, #FF007F 50%, transparent 100%) 1;
+  padding: 14px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: justify;
+}
+
+.mod-space-inner b {
+  color: #FF007F;
+}
+
+.mod-space-credit {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+  color: #aaa;
+}
