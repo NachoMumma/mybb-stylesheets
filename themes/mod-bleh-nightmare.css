@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Arial&display=swap');
+
+.mod-bleh-nightmare-container {
+  width: 450px;
+  padding: 20px;
+  border: 3px solid #840043;
+  border-radius: 300px 300px 0 0;
+  background-color: #0d0017;
+  position: relative;
+  margin: 100px auto 0 auto;
+  box-sizing: border-box;
+}
+
+.mod-bleh-nightmare-image {
+  width: 600px;
+  height: 525px;
+  margin: -100px auto -80px auto;
+  background: url('https://f2.toyhou.se/file/f2-toyhou-se/images/78867143_AIrBFg2ddnBikpT.png') no-repeat center top;
+  background-size: cover;
+}
+
+.mod-bleh-nightmare-inner {
+  border: 2px solid #840043;
+  border-image: linear-gradient(to bottom, #840043 15%, transparent) 1;
+  padding: 25px;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+  color: #eae0ff;
+  background-color: transparent;
+}
+
+.mod-bleh-nightmare-inner b {
+  color: #d10068;
+  font-weight: bold;
+}
+
+.mod-bleh-nightmare-credit {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+  color: #888;
+}
