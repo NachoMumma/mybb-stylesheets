@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Arial&display=swap');
+
+.mod-knifefight-container {
+  width: 600px;
+  padding: 20px 20px 500px 20px;
+  border: 3px solid #69359c;
+  border-radius: 0 0 300px 300px;
+  background: url('https://f2.toyhou.se/file/f2-toyhou-se/images/78867272_ToRlfYGFC2FPFL2.png') no-repeat center bottom;
+  background-size: 600px auto;
+  background-color: #dcd0ff;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.mod-knifefight-inner {
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #69359c 15%, transparent) 1;
+  padding: 25px;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+  color: #202530;
+}
+
+.mod-knifefight-inner b {
+  color: #69359c;
+}
+
+.mod-knifefight-credit {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+  color: #888;
+}
