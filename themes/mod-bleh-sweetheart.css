@@ -14,7 +14,10 @@
 .mod-bleh-sweetheart-image {
   width: 600px;
   height: 525px;
-  margin: -100px auto -80px auto;
+  margin-top: -130px; /* pulls image up */
+  margin-bottom: -80px;
+  margin-left: auto;
+  margin-right: auto;
   background: url('https://f2.toyhou.se/file/f2-toyhou-se/images/78867143_AIrBFg2ddnBikpT.png') no-repeat center top;
   background-size: cover;
 }
