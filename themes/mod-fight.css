@@ -1,0 +1,47 @@
+.mod-fight-container {
+  width: 400px;
+  padding: 20px;
+  border: 3px solid #C2C2FF;
+  border-radius: 300px 300px 0 0;
+  background-color: #FFFFC2;
+  position: relative;
+  margin: 60px auto 0 auto;
+  box-sizing: border-box;
+}
+
+.mod-fight-image {
+  position: absolute;
+  top: -75px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 315px;
+  height: 500px;
+  background: url('https://f2.toyhou.se/file/f2-toyhou-se/images/86863997_aKpRxuPBk2UOsKd.png') no-repeat center top;
+  background-size: cover;
+  z-index: 0;
+}
+
+.mod-fight-inner {
+  position: relative;
+  border: 2px solid #C2C2FF;
+  border-image: linear-gradient(to bottom, #C2C2FF 15%, transparent) 1;
+  padding: 20px;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 150%;
+  font-family: Arial, sans-serif;
+  color: #000000;
+  margin-top: 400px;
+  z-index: 1;
+}
+
+.mod-fight-inner b {
+  color: #040720;
+}
+
+.mod-fight-credit {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+  color: #888;
+}
