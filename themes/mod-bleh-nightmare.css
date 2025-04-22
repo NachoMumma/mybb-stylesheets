@@ -9,22 +9,26 @@
   position: relative;
   margin: 100px auto 0 auto;
   box-sizing: border-box;
+  overflow: visible;
 }
 
 .mod-bleh-nightmare-image {
+  position: absolute;
+  top: -75px;
+  left: 50%;
+  margin-left: -300px;
   width: 600px;
   height: 525px;
-  margin-top: -130px; /* pulls image up */
-  margin-bottom: -80px;
-  margin-left: auto;
-  margin-right: auto;
   background: url('https://f2.toyhou.se/file/f2-toyhou-se/images/78867143_AIrBFg2ddnBikpT.png') no-repeat center top;
   background-size: cover;
+  z-index: 1;
 }
 
 .mod-bleh-nightmare-inner {
+  position: relative;
+  margin-top: 475px;
   border: 2px solid #840043;
-  border-image: linear-gradient(to bottom, #840043 15%, transparent) 1;
+  border-image: linear-gradient(transparent 0%, #840043 50%, transparent 100%) 1;
   padding: 25px;
   text-align: justify;
   font-size: 14px;
@@ -32,6 +36,7 @@
   font-family: Arial, sans-serif;
   color: #eae0ff;
   background-color: transparent;
+  z-index: 2;
 }
 
 .mod-bleh-nightmare-inner b {
