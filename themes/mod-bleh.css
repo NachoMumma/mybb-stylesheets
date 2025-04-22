@@ -16,7 +16,7 @@
   position: absolute;
   top: -75px;
   left: 50%;
-  transform: translateX(-50%);
+  margin-left: -300px; /* half of the image width */
   width: 600px;
   height: 525px;
   background: url('https://f2.toyhou.se/file/f2-toyhou-se/images/78867143_AIrBFg2ddnBikpT.png?1712381111') no-repeat center top;
