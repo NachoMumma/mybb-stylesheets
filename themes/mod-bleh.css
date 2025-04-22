@@ -28,7 +28,7 @@
   position: relative;
   margin-top: 475px;
   border: 2px solid #69359c;
-  border-image: linear-gradient(to bottom, #210148 15%, transparent) 1;
+  border-image: linear-gradient(transparent 0%, #210148 50%, transparent 100%) 1;
   padding: 25px;
   text-align: justify;
   font-size: 14px;
