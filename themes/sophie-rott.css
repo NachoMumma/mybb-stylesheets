@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.sophie-rott-wrapper {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.sophie-rott-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 10px;
+  position: relative;
+}
+
+.sophie-rott-image {
+  min-width: 300px;
+  max-width: 450px;
+  flex: 1;
+  flex-grow: 0;
+  margin-right: -5%;
+  z-index: 1;
+}
+
+.sophie-rott-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.sophie-rott-textbox {
+  flex: 1;
+  background-color: #2c2438;
+  border: 10px solid #645c74;
+  padding: 20px;
+  min-width: 300px;
+  position: relative;
+  z-index: 0;
+  min-height: 350px;
+  box-sizing: border-box;
+}
+
+.sophie-rott-inner {
+  border-width: 1px 1px;
+  border-style: solid;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-top: none;
+  border-bottom: none;
+  border-image: linear-gradient(transparent 0%, #645c74 50%, transparent 100%) 1;
+  padding: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: justify;
+  color: #ffffff;
+}
+
+.sophie-rott-inner b {
+  color: #645c74;
+  font-weight: bold;
+}
+
+.sophie-rott-credit {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+  color: #aaa;
+}
