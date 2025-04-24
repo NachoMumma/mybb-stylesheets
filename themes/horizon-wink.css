@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+.horizon-wink-wrapper {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.horizon-wink-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 10px;
+  position: relative;
+}
+
+.horizon-wink-textbox {
+  flex: 1;
+  min-width: 300px;
+  min-height: 350px;
+  background-color: #644117;
+  border: 5px solid #fdf5e6;
+  padding: 20px;
+  position: relative;
+  z-index: 0;
+  box-sizing: border-box;
+}
+
+.horizon-wink-inner {
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-top: none;
+  border-bottom: none;
+  border-width: 1px 1px;
+  border-style: solid;
+  border-image: linear-gradient(transparent 0%, #fdf5e6 50%, transparent 100%) 1;
+  padding: 15px;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 16px;
+  text-align: justify;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.horizon-wink-inner b {
+  color: #fdf5e6;
+  font-weight: bold;
+}
+
+.horizon-wink-image {
+  min-width: 300px;
+  max-width: 450px;
+  flex: 1;
+  flex-grow: 0;
+  margin-left: -5%;
+  z-index: 1;
+  position: relative;
+}
+
+.horizon-wink-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.horizon-wink-credit {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+  color: #aaa;
+}
