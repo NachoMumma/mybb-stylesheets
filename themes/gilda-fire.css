@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.gilda-fire-container {
+  width: 600px;
+  padding: 1025px 20px 20px 20px;
+  border: 1px solid #e25822;
+  border-radius: 0 200px 0 0;
+  background: url('https://f2.toyhou.se/file/f2-toyhou-se/images/89287437_XoePT4xtMc5PrDK.png') no-repeat center top;
+  background-size: 600px auto;
+  background-color: #060316;
+  box-shadow: 0 0 8px #ffb300;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.gilda-fire-inner {
+  border: 2px solid transparent;
+  border-image: linear-gradient(to top, #e25822 25%, transparent) 1;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 20px;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.gilda-fire-inner b {
+  color: #e25822;
+  font-weight: bold;
+}
+
+.gilda-fire-credit {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+  color: #999;
+}
