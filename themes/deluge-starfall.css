@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.deluge-starfall-container {
+  width: 600px;
+  padding: 20px 20px 650px 20px;
+  border: 3px solid #ffb3d3;
+  border-radius: 0 0 300px 300px;
+  background-color: #000000;
+  background-image: url('https://f2.toyhou.se/file/f2-toyhou-se/images/88244269_iNehkfV5lYPCqqz.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 600px auto;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.deluge-starfall-inner {
+  border-width: 2px 2px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #ffb3d3 15%, transparent) 1;
+  padding: 20px;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+  color: #FFF5EE;
+}
+
+.deluge-starfall-inner b {
+  color: #ffb3d3;
+  font-weight: bold;
+}
+
+.deluge-starfall-credit {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+  color: #aaa;
+}
