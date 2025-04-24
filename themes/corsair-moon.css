@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Arial&display=swap');
+
+.corsair-moon-container {
+  width: 400px;
+  padding: 20px;
+  border: 10px solid #ffffff;
+  border-radius: 400px 400px 0 0;
+  background-color: #410056;
+  position: relative;
+  margin: 100px auto 0 auto;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+.corsair-moon-image {
+  position: absolute;
+  top: -25px;
+  left: 65%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 600px;
+  background: url('https://i.ibb.co/HHGqHdD/corsair-moon.png') no-repeat center top;
+  background-size: cover;
+  z-index: 1;
+}
+
+.corsair-moon-inner {
+  position: relative;
+  margin-top: 560px;
+  border: 2px solid #8F00FF;
+  border-image: linear-gradient(to bottom, #8F00FF 15%, transparent) 1;
+  padding: 25px;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+  color: #eed8ff;
+  background-color: transparent;
+  z-index: 2;
+}
+
+.corsair-moon-inner b {
+  color: #ca87ff;
+  font-weight: bold;
+}
+
+.corsair-moon-credit {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+  color: #aaa;
+}
