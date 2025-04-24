@@ -2,22 +2,16 @@
 
 .ken-beach-container {
   width: 525px;
-  border: 1px solid #bcdca0;
+  padding: 575px 30px 30px 30px; /* pushes content below image */
   border-radius: 10px;
   background-color: #719789;
+  background-image: url('https://i.ibb.co/XkW4BMH/princesstable.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 525px auto;
   box-sizing: border-box;
-  margin: 100px auto 0 auto;
-  overflow: hidden;
-  position: relative;
-  padding: 0 30px 30px 30px;
-}
-
-.ken-beach-image {
-  width: 525px;
-  height: 545px;
-  background: url('https://i.ibb.co/XkW4BMH/princesstable.png') no-repeat center top;
-  background-size: cover;
-  margin: -100px auto -30px auto; /* slight lift, then pull into the box */
+  margin: 0 auto;
+  border: 1px solid #bcdca0;
 }
 
 .ken-beach-inner {
