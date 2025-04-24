@@ -9,7 +9,7 @@
   margin: 100px auto 0 auto;
   overflow: visible;
   position: relative;
-  padding: 30px;
+  padding: 30px 30px 30px 30px; /* no top padding */
 }
 
 .ken-beach-image {
@@ -17,7 +17,7 @@
   height: 545px;
   background: url('https://i.ibb.co/XkW4BMH/princesstable.png') no-repeat center top;
   background-size: cover;
-  margin: -575px auto 30px auto;
+  margin: -545px auto 30px auto; /* now handles spacing from top */
 }
 
 .ken-beach-inner {
