@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Arial&display=swap');
+
+.ken-res-barrel-container {
+  width: 400px;
+  padding: 20px;
+  border: 5px solid #ffffff;
+  border-radius: 0 0 400px 400px;
+  background-color: #664c28;
+  position: relative;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+.ken-res-barrel-inner {
+  position: relative;
+  margin-bottom: 475px;
+  border: 2px solid #deb887;
+  border-image: linear-gradient(to bottom, #deb887 25%, transparent) 1;
+  padding: 25px;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+  color: #e3dac9;
+  background-color: transparent;
+  z-index: 1;
+}
+
+.ken-res-barrel-inner b {
+  color: #deb887;
+  font-weight: bold;
+}
+
+.ken-res-barrel-image {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-45%);
+  width: 600px;
+  height: 600px;
+  background: url('https://f2.toyhou.se/file/f2-toyhou-se/images/83541318_5VvSeg5gUubx8EM.png') no-repeat center bottom;
+  background-size: cover;
+  bottom: -55px;
+  z-index: 0;
+}
+
+.ken-res-barrel-credit {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+  color: #888;
+}
