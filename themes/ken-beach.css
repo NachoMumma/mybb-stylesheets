@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+.ken-beach-container {
+  width: 525px;
+  padding: 575px 30px 30px 30px;
+  border-radius: 10px;
+  background:
+    url('https://i.ibb.co/XkW4BMH/princesstable.png') no-repeat center top border-box,
+    #719789;
+  background-size: cover;
+  border: 1px solid #bcdca0;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.ken-beach-inner {
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-top: none;
+  border-bottom: none;
+  border-width: 0 2px;
+  border-style: solid;
+  border-image: linear-gradient(to top, #bcdca0 25%, transparent) 1;
+  padding: 0 25px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: justify;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.ken-beach-inner b {
+  color: #bcdca0;
+  font-weight: 700;
+}
+
+.ken-beach-credit {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+  color: #eee;
+}
