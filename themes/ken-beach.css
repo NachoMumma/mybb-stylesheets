@@ -4,10 +4,11 @@
   width: 525px;
   padding: 575px 30px 30px 30px;
   border-radius: 10px;
-  background:
-    url('https://i.ibb.co/XkW4BMH/princesstable.png') no-repeat center top border-box,
-    #719789;
-  background-size: cover;
+  background-color: #719789;
+  background-image: url('https://i.ibb.co/XkW4BMH/princesstable.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 525px auto; /* important: restrict width */
   border: 1px solid #bcdca0;
   box-sizing: border-box;
   margin: 0 auto;
