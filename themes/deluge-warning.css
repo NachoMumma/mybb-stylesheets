@@ -9,22 +9,16 @@
   box-sizing: border-box;
   margin: 0 auto;
   position: relative;
-}
-
-.deluge-warning-image {
-  width: 600px;
-  height: 550px;
-  background: url('https://f2.toyhou.se/file/f2-toyhou-se/images/90738624_owJwyT5SVsYiWnz.png') no-repeat center top;
-  background-size: 600px auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
+  overflow: hidden;
+  background-image: url('https://f2.toyhou.se/file/f2-toyhou-se/images/90738624_owJwyT5SVsYiWnz.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
 }
 
 .deluge-warning-inner {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   border-width: 3px;
   border-style: solid;
   border-left: 1px solid transparent;
@@ -38,6 +32,7 @@
   font-family: 'Tajawal', sans-serif;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.6);
+  animation: glitch-border 1.8s infinite;
 }
 
 .deluge-warning-inner b {
@@ -68,8 +63,4 @@
   100% {
     border-image-source: linear-gradient(transparent 0%, #FF007F 50%, transparent 100%);
   }
-}
-
-.deluge-warning-inner {
-  animation: glitch-border 1.8s infinite;
 }
