@@ -12,6 +12,23 @@
   position: relative;
 }
 
+.whisper-rott-image {
+  min-width: 300px;
+  max-width: 450px;
+  flex: 1;
+  flex-grow: 0;
+  position: relative;
+  z-index: 1;
+  margin-right: -5%;
+}
+
+.whisper-rott-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
 .whisper-rott-textbox {
   flex: 1;
   min-width: 300px;
@@ -44,23 +61,6 @@
 .whisper-rott-inner b {
   color: #ad4a70;
   font-weight: bold;
-}
-
-.whisper-rott-image {
-  min-width: 300px;
-  max-width: 450px;
-  flex: 1;
-  flex-grow: 0;
-  position: relative;
-  z-index: 1;
-  margin-left: -5%;
-}
-
-.whisper-rott-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: contain;
 }
 
 .whisper-rott-credit {
