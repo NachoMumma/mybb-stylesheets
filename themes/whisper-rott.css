@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
 
-.whisper-rott-flex {
+.whisper-rott-wrap {
   max-width: 850px;
-  margin: 0 auto;
-  padding: 15px;
+  margin: auto;
+  padding: 10px;
   box-sizing: border-box;
+  overflow: hidden;
+}
+
+.whisper-rott-layout {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
@@ -16,7 +20,6 @@
   min-width: 300px;
   max-width: 450px;
   flex: 1;
-  flex-grow: 0;
   position: relative;
   z-index: 1;
   margin-right: -5%;
@@ -25,35 +28,34 @@
 .whisper-rott-image img {
   width: 100%;
   height: auto;
-  display: block;
   object-fit: cover;
+  display: block;
+  margin-bottom: -15px;
 }
 
 .whisper-rott-textbox {
   flex: 1;
-  min-width: 300px;
-  min-height: 350px;
   background-color: #0a0204;
-  border: 3px solid #3f1d2e;
+  border: 5px solid #3f1d2e;
   padding: 20px;
+  min-width: 300px;
   position: relative;
   z-index: 0;
-  box-sizing: border-box;
-  border-radius: 300px 300px 0 0;
+  min-height: 350px;
 }
 
 .whisper-rott-inner {
+  border-width: 1px 1px;
+  border-style: solid;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
   border-top: none;
   border-bottom: none;
-  border-width: 2px;
-  border-style: solid;
-  border-image: linear-gradient(to bottom, #3f1d2e 15%, transparent) 1;
-  padding: 20px;
+  border-image: linear-gradient(transparent 0%, #3f1d2e 50%, transparent 100%) 1;
+  padding: 15px;
   font-family: 'Crimson Text', serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 150%;
   text-align: justify;
   color: #f4eef0;
 }
