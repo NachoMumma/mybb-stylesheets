@@ -54,8 +54,8 @@
   border-image: linear-gradient(transparent 0%, #3f1d2e 50%, transparent 100%) 1;
   padding: 15px;
   font-family: 'Crimson Text', serif;
-  font-size: 14px;
-  line-height: 150%;
+  font-size: 15px; /* was 14px */
+  line-height: 160%; /* was 150% */
   text-align: justify;
   color: #f4eef0;
 }
