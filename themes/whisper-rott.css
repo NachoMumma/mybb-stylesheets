@@ -1,29 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
 
-.whisper-rott-wrapper {
-  width: 600px;
-  padding: 20px;
-  border: 3px solid #3f1d2e;
-  border-radius: 0 0 300px 300px;
-  background-color: #0a0204;
-  position: relative;
+.whisper-rott-flex {
+  max-width: 850px;
   margin: 0 auto;
+  padding: 15px;
   box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 10px;
+  position: relative;
 }
 
-.whisper-rott-box {
+.whisper-rott-textbox {
+  flex: 1;
+  min-width: 300px;
+  min-height: 350px;
+  background-color: #0a0204;
+  border: 3px solid #3f1d2e;
+  padding: 20px;
   position: relative;
-  border: 2px solid #3f1d2e;
+  z-index: 0;
+  box-sizing: border-box;
+  border-radius: 300px 300px 0 0;
+}
+
+.whisper-rott-inner {
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-top: none;
+  border-bottom: none;
+  border-width: 2px;
+  border-style: solid;
   border-image: linear-gradient(to bottom, #3f1d2e 15%, transparent) 1;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 25px;
-  text-align: justify;
+  padding: 20px;
+  font-family: 'Crimson Text', serif;
   font-size: 14px;
   line-height: 1.5;
-  font-family: 'Crimson Text', serif;
+  text-align: justify;
   color: #f4eef0;
-  margin-bottom: 475px;
-  z-index: 0;
 }
 
 .whisper-rott-inner b {
@@ -32,16 +47,20 @@
 }
 
 .whisper-rott-image {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 620px;               /* Wider to show all of her */
-  height: 550px;
-  background: url('https://f2.toyhou.se/file/f2-toyhou-se/images/90007049_C5V4UP6kmbNgmUv.png?1733805659') no-repeat center top;
-  background-size: contain;   /* Ensures full image shows without cropping */
-  background-repeat: no-repeat;
-  bottom: -40px;
+  min-width: 300px;
+  max-width: 450px;
+  flex: 1;
+  flex-grow: 0;
+  position: relative;
   z-index: 1;
+  margin-left: -5%;
+}
+
+.whisper-rott-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
 }
 
 .whisper-rott-credit {
