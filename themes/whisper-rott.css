@@ -2,28 +2,28 @@
 
 .whisper-rott-wrapper {
   width: 600px;
-  padding: 550px 20px 20px 20px;
+  padding: 20px;
   border: 3px solid #3f1d2e;
   border-radius: 0 0 300px 300px;
   background-color: #0a0204;
-  background-image: url('https://f2.toyhou.se/file/f2-toyhou-se/images/90007049_C5V4UP6kmbNgmUv.png?1733805659');
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 600px auto;
-  box-sizing: border-box;
+  position: relative;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
-.whisper-rott-inner {
-  border-width: 2px;
-  border-style: solid;
+.whisper-rott-box {
+  position: relative;
+  border: 2px solid #3f1d2e;
   border-image: linear-gradient(to bottom, #3f1d2e 15%, transparent) 1;
-  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 25px;
   text-align: justify;
   font-size: 14px;
   line-height: 1.5;
   font-family: 'Crimson Text', serif;
   color: #f4eef0;
+  margin-bottom: 475px;
+  z-index: 0;
 }
 
 .whisper-rott-inner b {
@@ -31,9 +31,21 @@
   font-weight: bold;
 }
 
+.whisper-rott-image {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-45%);
+  width: 600px;
+  height: 600px;
+  background: url('https://f2.toyhou.se/file/f2-toyhou-se/images/90007049_C5V4UP6kmbNgmUv.png?1733805659') no-repeat center bottom;
+  background-size: cover;
+  bottom: -55px;
+  z-index: 1;
+}
+
 .whisper-rott-credit {
   font-size: 10px;
   text-align: center;
   margin-top: 10px;
-  color: #999;
+  color: #888;
 }
