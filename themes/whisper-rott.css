@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+.whisper-rott-wrapper {
+  width: 600px;
+  padding: 550px 20px 20px 20px;
+  border: 3px solid #3f1d2e;
+  border-radius: 0 0 300px 300px;
+  background-color: #0a0204;
+  background-image: url('https://f2.toyhou.se/file/f2-toyhou-se/images/90007049_C5V4UP6kmbNgmUv.png?1733805659');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 600px auto;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.whisper-rott-inner {
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #3f1d2e 15%, transparent) 1;
+  padding: 20px;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: 'Crimson Text', serif;
+  color: #f4eef0;
+}
+
+.whisper-rott-inner b {
+  color: #ad4a70;
+  font-weight: bold;
+}
+
+.whisper-rott-credit {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+  color: #999;
+}
