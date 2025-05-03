@@ -34,12 +34,13 @@
 .whisper-rott-image {
   position: absolute;
   left: 50%;
-  transform: translateX(-45%);
-  width: 600px;
-  height: 600px;
-  background: url('https://f2.toyhou.se/file/f2-toyhou-se/images/90007049_C5V4UP6kmbNgmUv.png?1733805659') no-repeat center bottom;
-  background-size: cover;
-  bottom: -55px;
+  transform: translateX(-50%);
+  width: 620px;               /* Wider to show all of her */
+  height: 550px;
+  background: url('https://f2.toyhou.se/file/f2-toyhou-se/images/90007049_C5V4UP6kmbNgmUv.png?1733805659') no-repeat center top;
+  background-size: contain;   /* Ensures full image shows without cropping */
+  background-repeat: no-repeat;
+  bottom: -40px;
   z-index: 1;
 }
 
