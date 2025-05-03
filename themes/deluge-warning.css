@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+
+.deluge-warning-wrapper {
+  width: 600px;
+  padding: 550px 20px 20px 20px;
+  border: 2px solid #FF007F;
+  border-radius: 0 300px 0 0;
+  background-color: #000;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+}
+
+.deluge-warning-image {
+  width: 600px;
+  height: 550px;
+  background: url('https://f2.toyhou.se/file/f2-toyhou-se/images/90738624_owJwyT5SVsYiWnz.png') no-repeat center top;
+  background-size: 600px auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.deluge-warning-inner {
+  position: relative;
+  z-index: 1;
+  border-width: 3px;
+  border-style: solid;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-top: none;
+  border-bottom: none;
+  border-image: linear-gradient(transparent 0%, #FF007F 50%, transparent 100%) 1;
+  padding: 16px;
+  text-align: justify;
+  font-size: 18px;
+  font-family: 'Tajawal', sans-serif;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.deluge-warning-inner b {
+  color: #FF007F;
+  font-weight: bold;
+}
+
+.deluge-warning-credit {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+  color: #888;
+}
+
+@keyframes glitch-border {
+  0% {
+    border-image-source: linear-gradient(transparent 0%, #FF007F 50%, transparent 100%);
+  }
+  25% {
+    border-image-source: linear-gradient(transparent 10%, #FF007F 40%, transparent 90%);
+  }
+  50% {
+    border-image-source: linear-gradient(transparent 0%, #FF007F 60%, transparent 100%);
+  }
+  75% {
+    border-image-source: linear-gradient(transparent 5%, #FF007F 45%, transparent 95%);
+  }
+  100% {
+    border-image-source: linear-gradient(transparent 0%, #FF007F 50%, transparent 100%);
+  }
+}
+
+.deluge-warning-inner {
+  animation: glitch-border 1.8s infinite;
+}
