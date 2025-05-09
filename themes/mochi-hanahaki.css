@@ -31,6 +31,56 @@
   font-weight: bold;
 }
 
+.mochi-hanahaki-spoiler {
+  margin: 1.5em 0;
+  padding: 1em;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.mochi-hanahaki-spoiler-warning {
+  color: #ffc2cc;
+  font-size: 0.9em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+}
+
+.mochi-hanahaki-spoiler-toggle {
+  cursor: pointer;
+  user-select: none;
+}
+
+.mochi-hanahaki-spoiler-cover {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #dcbec4;
+  padding: 0.6em;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  text-align: center;
+  border-radius: 8px;
+  font-style: italic;
+  transition: all 0.3s ease;
+}
+
+.mochi-hanahaki-spoiler-toggle.revealed .mochi-hanahaki-spoiler-cover {
+  display: none;
+}
+
+.mochi-hanahaki-spoiler-text {
+  display: none;
+  color: #f2e9ec;
+  margin-top: 0.75em;
+  line-height: 1.65;
+}
+
+.mochi-hanahaki-spoiler-toggle.revealed .mochi-hanahaki-spoiler-text {
+  display: block;
+}
+
+
 .mochi-hanahaki-credit {
   font-size: 10px;
   text-align: center;
