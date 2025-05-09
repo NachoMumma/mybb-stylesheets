@@ -32,54 +32,42 @@
 }
 
 .mochi-hanahaki-spoiler {
-  position: relative;
   margin: 1.5em 0;
-  padding: 1em;
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
+  padding: 1em 0 0;
   font-family: 'Poppins', sans-serif;
 }
 
-.mochi-hanahaki-spoiler-toggle {
-  display: none;
-}
-
-.mochi-hanahaki-spoiler-cover {
-  display: inline-block;
-  background-color: rgba(255, 255, 255, 0.08);
-  color: #dcbec4;
-  padding: 0.6em 1em;
-  border: 1px dashed rgba(255, 255, 255, 0.2);
-  border-radius: 8px;
-  cursor: pointer;
-  font-style: italic;
-  text-align: center;
-  margin-bottom: 0.5em;
-}
-
 .mochi-hanahaki-spoiler-warning {
-  margin: 0.5em 0;
-  text-align: left;
+  color: #ffc2cc;
+  font-size: 0.9em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  letter-spacing: 0.3px;
 }
 
-.mochi-hanahaki-spoiler-icon {
-  height: 20px;
-  width: auto;
-  margin-right: 6px;
-  vertical-align: middle;
-  image-rendering: pixelated;
+.mochi-hanahaki-details {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 0.75em;
+}
+
+.mochi-hanahaki-summary {
+  color: #dcbec4;
+  font-style: italic;
+  cursor: pointer;
+  outline: none;
+  transition: opacity 0.3s ease;
+}
+
+.mochi-hanahaki-summary:hover {
+  opacity: 0.7;
 }
 
 .mochi-hanahaki-spoiler-text {
-  display: none;
   margin-top: 1em;
   color: #f2e9ec;
   line-height: 1.65;
-}
-
-.mochi-hanahaki-spoiler-toggle:checked ~ .mochi-hanahaki-spoiler-text {
-  display: block;
 }
 
 .mochi-hanahaki-credit {
