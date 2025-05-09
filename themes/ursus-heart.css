@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+.ursus-heart-wrapper {
+  max-width: 850px;
+  margin: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.ursus-heart-layout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 10px;
+  position: relative;
+}
+
+.ursus-heart-image {
+  min-width: 300px;
+  max-width: 450px;
+  flex: 1;
+  position: relative;
+  flex-grow: 0;
+  margin-left: -5%;
+  z-index: 1;
+}
+
+.ursus-heart-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin-bottom: -15px;
+}
+
+.ursus-heart-textbox {
+  flex: 1;
+  background-color: #2e1f15;
+  border: 5px solid #6e4f3a;
+  padding: 20px;
+  min-width: 300px;
+  position: relative;
+  z-index: 0;
+  min-height: 350px;
+}
+
+.ursus-heart-inner {
+  border-width: 1px 1px;
+  border-style: solid;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-top: none;
+  border-bottom: none;
+  border-image: linear-gradient(transparent 0%, #6e4f3a 50%, transparent 100%) 1;
+  padding: 15px;
+  font-family: 'Special Elite', monospace;
+  font-size: 15px;
+  line-height: 160%;
+  text-align: justify;
+  color: #f5f0ee;
+}
+
+.ursus-heart-inner b {
+  color: #dfa0b7;
+  font-weight: bold;
+}
+
+.ursus-heart-credit {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+  color: #aaa;
+}
