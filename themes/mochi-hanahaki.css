@@ -32,6 +32,7 @@
 }
 
 .mochi-hanahaki-spoiler {
+  position: relative;
   margin: 1.5em 0;
   padding: 1em;
   background-color: rgba(255, 255, 255, 0.05);
@@ -40,46 +41,46 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.mochi-hanahaki-spoiler-warning {
-  color: #ffc2cc;
-  font-size: 0.9em;
-  margin-bottom: 0.5em;
-  font-weight: bold;
-  letter-spacing: 0.3px;
-}
-
 .mochi-hanahaki-spoiler-toggle {
-  cursor: pointer;
-  user-select: none;
+  display: none;
 }
 
 .mochi-hanahaki-spoiler-cover {
-  display: block;
+  display: inline-block;
   background-color: rgba(255, 255, 255, 0.08);
   color: #dcbec4;
-  padding: 0.6em;
+  padding: 0.6em 1em;
   border: 1px dashed rgba(255, 255, 255, 0.2);
-  text-align: center;
   border-radius: 8px;
+  cursor: pointer;
   font-style: italic;
-  transition: all 0.3s ease;
+  text-align: center;
+  margin-bottom: 0.5em;
 }
 
-.mochi-hanahaki-spoiler-toggle.revealed .mochi-hanahaki-spoiler-cover {
-  display: none;
+.mochi-hanahaki-spoiler-warning {
+  margin: 0.5em 0;
+  text-align: left;
+}
+
+.mochi-hanahaki-spoiler-icon {
+  height: 20px;
+  width: auto;
+  margin-right: 6px;
+  vertical-align: middle;
+  image-rendering: pixelated;
 }
 
 .mochi-hanahaki-spoiler-text {
   display: none;
+  margin-top: 1em;
   color: #f2e9ec;
-  margin-top: 0.75em;
   line-height: 1.65;
 }
 
-.mochi-hanahaki-spoiler-toggle.revealed .mochi-hanahaki-spoiler-text {
+.mochi-hanahaki-spoiler-toggle:checked ~ .mochi-hanahaki-spoiler-text {
   display: block;
 }
-
 
 .mochi-hanahaki-credit {
   font-size: 10px;
