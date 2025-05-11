@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
 .ursus-moon-container {
-  width: 100%;
+  width: 90%;
   max-width: 400px;
   padding: 20px;
   border: 5px solid #39395c;
@@ -22,7 +22,7 @@
   line-height: 160%;
   font-family: 'Courier Prime', monospace;
   color: #dcdcee;
-  margin-bottom: 500px;
+  margin-bottom: 475px;
   box-sizing: border-box;
 }
 
@@ -37,8 +37,7 @@
   transform: translateX(-50%);
   width: 100%;
   max-width: 600px;
-  height: auto;
-  aspect-ratio: 1 / 1;
+  height: 600px;
   background: url('https://images2.imgbox.com/1e/37/Hd2DYQv4_o.png') no-repeat center bottom;
   background-size: contain;
   bottom: -100px;
