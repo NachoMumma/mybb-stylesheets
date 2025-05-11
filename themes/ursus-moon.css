@@ -1,36 +1,39 @@
-.ursus-moon-container {
-  width: 90%;
-  max-width: 650px;
-  margin: 30px auto;
-  background-color: #0a0a13;
-  border: 2px solid #555577;
-  border-radius: 80px 80px 20px 20px;
-  overflow: hidden;
-  font-family: 'Tajawal', sans-serif;
-  color: #e6e6f9;
-  box-shadow: 0 0 20px rgba(80, 80, 120, 0.4);
+.ursus-moon-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: 60px auto 30px auto;
+  padding-top: 260px;
 }
 
-.ursus-moon-header {
-  height: 240px;
-  background: url('https://images2.imgbox.com/1e/37/Hd2DYQv4_o.png') no-repeat center top;
-  background-size: cover;
-  background-color: #111123;
-  border-bottom: 2px solid #444466;
+.ursus-moon-arch {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+  height: 320px;
+  background: url('https://images2.imgbox.com/c5/64/69HFcURZ_o.gif') no-repeat center top;
+  background-size: contain;
+  z-index: 0;
+  pointer-events: none;
 }
 
-.ursus-moon-inner {
-  padding: 30px;
-  background-color: #0a0a13;
+.ursus-moon-text {
+  position: relative;
   z-index: 2;
+  font-family: 'Tajawal', sans-serif;
+  color: #e5e7ff;
+  text-align: left;
+  padding: 0 20px;
 }
 
-.ursus-moon-inner p {
+.ursus-moon-text p {
   margin-bottom: 1em;
 }
 
-.ursus-moon-inner b {
-  color: #b3a1ff;
+.ursus-moon-text b {
+  color: #c0aaff;
 }
 
 .ursus-moon-credit {
