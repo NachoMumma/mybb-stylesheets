@@ -1,44 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
-.ursus-moon-wrapper {
-  width: 600px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-.ursus-moon-image {
-  width: 600px;
-  height: 600px;
-  background: url('https://images2.imgbox.com/1e/37/Hd2DYQv4_o.png') no-repeat center center;
-  background-size: contain;
-  margin: 0 auto -200px auto; /* pull image down over arch */
-}
-
-.ursus-moon-arch {
+.ursus-moon-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border: 5px solid #39395c;
+  border-radius: 0 0 400px 400px;
   background-color: #0a0a0f;
-  border: 3px solid #39395c;
-  border-radius: 0 0 300px 300px;
-  padding: 240px 25px 25px 25px; /* top padding increased to make space for image */
+  position: relative;
+  margin: 0 auto;
   box-sizing: border-box;
 }
 
 .ursus-moon-inner {
-  border-width: 2px;
-  border-style: solid;
-  border-image: linear-gradient(to bottom, #6c6c9b 15%, transparent) 1;
-  padding: 20px;
-  font-family: 'Courier Prime', monospace;
+  position: relative;
+  border: 2px solid #6c6c9b;
+  border-image: linear-gradient(to bottom, #6c6c9b 25%, transparent) 1;
+  padding: 25px;
+  text-align: justify;
   font-size: 15px;
   line-height: 160%;
-  text-align: justify;
+  font-family: 'Courier Prime', monospace;
   color: #dcdcee;
-  background-color: rgba(10, 10, 15, 0.8);
+  margin-bottom: 500px;
+  box-sizing: border-box;
 }
 
 .ursus-moon-inner b {
   color: #8d7dc4;
   font-weight: bold;
+}
+
+.ursus-moon-image {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  background: url('https://images2.imgbox.com/1e/37/Hd2DYQv4_o.png') no-repeat center bottom;
+  background-size: contain;
+  bottom: -100px;
+  pointer-events: none;
 }
 
 .ursus-moon-credit {
