@@ -11,7 +11,7 @@
 .ursus-moon-arch {
   background-color: #0a0a0f;
   border: 3px solid #39395c;
-  border-radius: 0 0 300px 300px;
+  border-radius: 0 0 600px 600px;
   padding: 25px;
   box-sizing: border-box;
 }
@@ -39,8 +39,8 @@
   bottom: -90px;
   left: 50%;
   transform: translateX(-50%);
-  width: 300px;
-  height: 300px;
+  width: 600px;
+  height: 600px;
   background: url('https://images2.imgbox.com/1e/37/Hd2DYQv4_o.png') no-repeat center center;
   background-size: contain;
   z-index: 2;
