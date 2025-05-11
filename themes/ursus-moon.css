@@ -1,44 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
-.ursus-moon-container {
+.ursus-moon-wrapper {
+  width: 600px;
+  margin: 0 auto;
   position: relative;
-  background-color: #0d0d13;
-  border: 2px solid #3c3c5a;
-  border-radius: 20px;
-  padding: 60px 30px 30px 30px;
-  margin: 100px auto 40px auto;
-  width: 90%;
-  max-width: 650px;
-  font-family: 'Space Mono', monospace;
-  color: #e8eaff;
-  box-shadow: 0 0 15px rgba(50, 50, 80, 0.5);
+  padding-bottom: 100px;
+  box-sizing: border-box;
 }
 
-.ursus-moon-inner p {
-  margin-bottom: 1em;
+.ursus-moon-arch {
+  background-color: #0a0a0f;
+  border: 3px solid #39395c;
+  border-radius: 0 0 300px 300px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+.ursus-moon-inner {
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #6c6c9b 15%, transparent) 1;
+  padding: 20px;
+  font-family: 'Courier Prime', monospace;
+  font-size: 15px;
+  line-height: 160%;
+  text-align: justify;
+  color: #dcdcee;
+  background-color: rgba(10, 10, 15, 0.8);
 }
 
 .ursus-moon-inner b {
-  color: #b8aaff;
+  color: #8d7dc4;
+  font-weight: bold;
 }
 
 .ursus-moon-image {
   position: absolute;
-  top: -100px;
+  bottom: -90px;
   left: 50%;
   transform: translateX(-50%);
-  width: 220px;
-  height: 220px;
+  width: 300px;
+  height: 300px;
   background: url('https://images2.imgbox.com/1e/37/Hd2DYQv4_o.png') no-repeat center center;
   background-size: contain;
-  pointer-events: none;
   z-index: 2;
+  pointer-events: none;
 }
 
 .ursus-moon-credit {
-  text-align: center;
   font-size: 10px;
-  color: #777799;
+  color: #888;
+  text-align: center;
   margin-top: 10px;
-  font-family: 'Space Mono', monospace;
 }
