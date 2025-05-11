@@ -1,0 +1,41 @@
+.ursus-moon-post {
+  position: relative;
+  background-color: #0f0f0f;
+  border: 2px solid #88aaff;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 650px;
+  font-family: 'Tajawal', sans-serif;
+  color: #f0f0f0;
+  overflow: hidden;
+}
+
+.ursus-moon-inner p {
+  margin-bottom: 1em;
+}
+
+.ursus-moon-inner b {
+  color: #ffb6c1;
+}
+
+.ursus-moon-image {
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+  width: 200px;
+  height: 200px;
+  background: url('https://images2.imgbox.com/c5/64/69HFcURZ_o.gif') no-repeat center center;
+  background-size: contain;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.95;
+}
+
+.ursus-moon-credit {
+  text-align: center;
+  font-size: 10px;
+  color: #aaa;
+  margin-top: 10px;
+}
