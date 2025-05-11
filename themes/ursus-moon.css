@@ -3,17 +3,28 @@
 .ursus-moon-wrapper {
   width: 600px;
   margin: 0 auto;
-  position: relative;
-  padding-bottom: 100px;
   box-sizing: border-box;
+  position: relative;
+}
+
+.ursus-moon-image {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto -250px auto; /* pulls image down visually over arch */
+  background: url('https://images2.imgbox.com/1e/37/Hd2DYQv4_o.png') no-repeat center center;
+  background-size: contain;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .ursus-moon-arch {
   background-color: #0a0a0f;
   border: 3px solid #39395c;
-  border-radius: 0 0 600px 600px;
+  border-radius: 0 0 300px 300px;
   padding: 25px;
   box-sizing: border-box;
+  position: relative;
+  z-index: 0;
 }
 
 .ursus-moon-inner {
@@ -32,19 +43,6 @@
 .ursus-moon-inner b {
   color: #8d7dc4;
   font-weight: bold;
-}
-
-.ursus-moon-image {
-  position: absolute;
-  bottom: -90px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 600px;
-  height: 600px;
-  background: url('https://images2.imgbox.com/1e/37/Hd2DYQv4_o.png') no-repeat center center;
-  background-size: contain;
-  z-index: 2;
-  pointer-events: none;
 }
 
 .ursus-moon-credit {
