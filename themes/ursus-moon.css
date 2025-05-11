@@ -1,47 +1,44 @@
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
-.ursus-moon-wrap {
+.ursus-moon-container {
   position: relative;
-  width: 100%;
-  max-width: 700px;
-  margin: 60px auto 30px auto;
-  padding-top: 260px;
-}
-
-.ursus-moon-arch {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 320px;
-  height: 320px;
-  background: url('https://images2.imgbox.com/1e/37/Hd2DYQv4_o.png') no-repeat center top;
-  background-size: contain;
-  z-index: 0;
-  pointer-events: none;
-}
-
-.ursus-moon-text {
-  position: relative;
-  z-index: 2;
+  background-color: #0d0d13;
+  border: 2px solid #3c3c5a;
+  border-radius: 20px;
+  padding: 60px 30px 30px 30px;
+  margin: 100px auto 40px auto;
+  width: 90%;
+  max-width: 650px;
   font-family: 'Space Mono', monospace;
-  color: #e5e7ff;
-  text-align: left;
-  padding: 0 20px;
+  color: #e8eaff;
+  box-shadow: 0 0 15px rgba(50, 50, 80, 0.5);
 }
 
-.ursus-moon-text p {
+.ursus-moon-inner p {
   margin-bottom: 1em;
 }
 
-.ursus-moon-text b {
-  color: #c0aaff;
+.ursus-moon-inner b {
+  color: #b8aaff;
+}
+
+.ursus-moon-image {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 220px;
+  height: 220px;
+  background: url('https://images2.imgbox.com/1e/37/Hd2DYQv4_o.png') no-repeat center center;
+  background-size: contain;
+  pointer-events: none;
+  z-index: 2;
 }
 
 .ursus-moon-credit {
   text-align: center;
   font-size: 10px;
-  color: #8888aa;
+  color: #777799;
   margin-top: 10px;
   font-family: 'Space Mono', monospace;
 }
