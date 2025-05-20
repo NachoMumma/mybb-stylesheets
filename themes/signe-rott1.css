@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.signe-rott1-wrapper {
+  max-width: 850px;
+  margin: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.signe-rott1-layout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 10px;
+  position: relative;
+}
+
+.signe-rott1-image {
+  min-width: 300px;
+  max-width: 450px;
+  flex: 1;
+  position: relative;
+  flex-grow: 0;
+  margin-right: -5%;
+  z-index: 1;
+}
+
+.signe-rott1-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin-bottom: -15px;
+}
+
+.signe-rott1-textbox {
+  flex: 1;
+  background-color: #2a1113;
+  border: 5px solid #a13838;
+  padding: 20px;
+  min-width: 300px;
+  position: relative;
+  z-index: 0;
+  min-height: 350px;
+}
+
+.signe-rott1-inner {
+  border-width: 1px 1px;
+  border-style: solid;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-top: none;
+  border-bottom: none;
+  border-image: linear-gradient(transparent 0%, #a13838 50%, transparent 100%) 1;
+  padding: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  line-height: 160%;
+  text-align: justify;
+  color: #f8e6e8;
+}
+
+.signe-rott1-inner b {
+  color: #d87575;
+  font-weight: bold;
+}
+
+.signe-rott1-credit {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+  color: #aaa;
+}
