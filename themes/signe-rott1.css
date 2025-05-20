@@ -45,6 +45,15 @@
   min-height: 350px;
 }
 
+.signe-statement {
+  font-size: 10px;
+  font-style: italic;
+  line-height: 1.4;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #aaa;
+}
+
 .signe-rott1-inner {
   border-width: 1px 1px;
   border-style: solid;
