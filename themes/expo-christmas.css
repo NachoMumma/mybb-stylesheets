@@ -2,33 +2,35 @@
 
 .expo-christmas-wrapper {
   position: relative;
-  width: 500px;
+  width: 480px;               
   margin: 0 auto;
+  padding-top: 320px;         
 }
 
 .expo-christmas-image {
   position: absolute;
-  top: -260px; 
+  top: -260px;
   left: 50%;
   transform: translateX(-50%);
-  width: 500px;
+  width: 480px;
   height: auto;
   background: url('https://images2.imgbox.com/79/19/s7JwNgUb_o.png') no-repeat center top;
   background-size: contain;
   z-index: 5;
+  pointer-events: none;
 }
 
 .expo-christmas-container {
-  width: 100%;
+  width: 400px;
   padding: 20px;
   border: 5px solid #d69794;
   border-radius: 600px 600px 0 0;
   background-color: #3e3936;
   box-sizing: border-box;
   position: relative;
-  z-index: 1;
+  margin: 0 auto;
   overflow: visible;
-  margin-top: 200px; 
+  z-index: 1;
 }
 
 .expo-christmas-inner {
