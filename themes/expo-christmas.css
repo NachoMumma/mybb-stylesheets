@@ -1,10 +1,13 @@
-.expo-christmas-wrap {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.expo-christmas-container {
   width: 400px;
   padding: 20px;
   border: 5px solid #d69794;
   border-radius: 600px 600px 0 0;
   background-color: #3e3936;
   position: relative;
+  margin: 0 auto;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -15,26 +18,46 @@
   transform: translateX(-50%);
   width: 600px;
   height: 425px;
-  background: url('https://cdn.discordapp.com/attachments/1313688234575790121/1377949566715822110/Expo.webp?ex=6840c1c9&is=683f7049&hm=8cfe4b3db7256b9c74ba43719916b73f1e4fb38704dd9aa698f4081137d74b4d&') no-repeat center top;
+  background: url('https://images2.imgbox.com/79/19/s7JwNgUb_o.png')
+    no-repeat center top;
   background-size: cover;
   top: -25px;
   z-index: 1;
+  pointer-events: none;
 }
 
 .expo-christmas-inner {
   position: relative;
-  border: 2px solid #9dac97;
-  border-image: linear-gradient(to bottom, #9dac97 15%, transparent) 1;
+  z-index: 2;
+  border-width: 0 2px 0 2px;
+  border-style: solid;
+  border-image-source: linear-gradient(
+    to bottom,
+    transparent 15%,
+    #9dac97 50%,
+    transparent 85%
+  );
+  border-image-slice: 1;
   padding: 20px;
   margin-top: 385px;
   text-align: justify;
-  font-size: 14px;
-  line-height: 150%;
   font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
   color: #d69794;
-  z-index: 2;
+  background-color: rgba(62, 57, 54, 0.8);
+  box-sizing: border-box;
 }
 
 .expo-christmas-inner b {
   color: #9266ad;
+  font-weight: bold;
+}
+
+.expo-christmas-credit {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+  color: #aaa;
 }
