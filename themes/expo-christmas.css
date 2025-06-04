@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 .expo-christmas-wrapper {
-  width: 650px;
+  width: 600px;
   padding: 20px;
   border: 3px solid #3e1a45;
   border-radius: 300px 300px 0 0;
@@ -26,7 +26,7 @@
 
 .expo-christmas-container {
   position: relative;
-  margin-top: 400px;
+  margin-top: 350px;
   border: 2px solid #6a287d;
   border-image: linear-gradient(transparent 0%, #3e1a45 50%, transparent 100%) 1;
   padding: 25px;
