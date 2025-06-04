@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 .expo-christmas-wrapper {
-  width: 600px;
+  width: 600px; /* match image width */
   padding: 20px;
   border: 3px solid #3e1a45;
   border-radius: 300px 300px 0 0;
@@ -9,24 +9,25 @@
   position: relative;
   margin: 100px auto 0 auto;
   box-sizing: border-box;
-  overflow: visible;
+  overflow: visible; /* allow image to spill out */
 }
 
 .expo-christmas-image {
   position: absolute;
   top: -75px;
   left: 50%;
-  margin-left: -300px; /* half of image width */
-  width: 650px;
+  transform: translateX(-50%);
+  width: 600px;
   height: 525px;
   background: url('https://images2.imgbox.com/79/19/s7JwNgUb_o.png') no-repeat center top;
-  background-size: cover;
+  background-size: contain;
   z-index: 1;
+  pointer-events: none;
 }
 
 .expo-christmas-container {
   position: relative;
-  margin-top: 350px;
+  margin-top: 475px;
   border: 2px solid #6a287d;
   border-image: linear-gradient(transparent 0%, #3e1a45 50%, transparent 100%) 1;
   padding: 25px;
