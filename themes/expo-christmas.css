@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 .expo-christmas-wrapper {
-  width: 600px; /* match image width */
-  padding: 20px;
+  width: 600px;
+  padding: 0;
   border: 3px solid #3e1a45;
   border-radius: 300px 300px 0 0;
   background-color: rgba(31, 5, 41, 0.85);
   position: relative;
-  margin: 100px auto 0 auto;
+  margin: 0 auto;
   box-sizing: border-box;
-  overflow: visible; /* allow image to spill out */
+  overflow: visible;
 }
 
 .expo-christmas-image {
   position: absolute;
-  top: -75px;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 600px;
@@ -27,10 +27,10 @@
 
 .expo-christmas-container {
   position: relative;
-  margin-top: 475px;
+  margin-top: 525px;
   border: 2px solid #6a287d;
   border-image: linear-gradient(transparent 0%, #3e1a45 50%, transparent 100%) 1;
-  padding: 25px;
+  padding: 100px 25px 25px 25px;
   text-align: justify;
   font-size: 14px;
   line-height: 1.5;
