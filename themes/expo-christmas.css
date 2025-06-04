@@ -1,66 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 .expo-christmas-wrapper {
+  width: 450px;
+  padding: 20px;
+  border: 3px solid #3e1a45;
+  border-radius: 300px 300px 0 0;
+  background-color: rgba(31, 5, 41, 0.85);
   position: relative;
-  width: 600px;               
-  margin: 0 auto;
-  padding-top: 320px;         
+  margin: 100px auto 0 auto;
+  box-sizing: border-box;
+  overflow: visible;
 }
 
 .expo-christmas-image {
   position: absolute;
-  top: -260px;
+  top: -75px;
   left: 50%;
-  transform: translateX(-50%);
+  margin-left: -300px; /* half of image width */
   width: 600px;
-  height: auto;
+  height: 525px;
   background: url('https://images2.imgbox.com/79/19/s7JwNgUb_o.png') no-repeat center top;
   background-size: cover;
-  z-index: 5;
-  pointer-events: none;
-}
-
-.expo-christmas-container {
-  width: 400px;
-  padding: 20px;
-  border: 5px solid #d69794;
-  border-radius: 600px 600px 0 0;
-  background-color: #3e3936;
-  box-sizing: border-box;
-  position: relative;
-  margin: 0 auto;
-  overflow: visible;
   z-index: 1;
 }
 
-.expo-christmas-inner {
+.expo-christmas-container {
   position: relative;
-  z-index: 2;
-  padding: 20px 25px;
-  margin-top: 150px;
+  margin-top: 475px;
+  border: 2px solid #6a287d;
+  border-image: linear-gradient(transparent 0%, #3e1a45 50%, transparent 100%) 1;
+  padding: 25px;
   text-align: justify;
-  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   line-height: 1.5;
-  color: #d69794;
-  background-color: rgba(62, 57, 54, 0.8);
-  box-sizing: border-box;
-
-  border-width: 0 2px 0 2px;
-  border-style: solid;
-  border-image-source: linear-gradient(to bottom, transparent 15%, #9dac97 50%, transparent 85%);
-  border-image-slice: 1;
+  font-family: 'Montserrat', sans-serif;
+  color: #f7e9ff;
+  background-color: transparent;
+  z-index: 2;
 }
 
-.expo-christmas-inner b {
-  color: #9266ad;
+.expo-christmas-container b {
+  color: #d8a1e5;
   font-weight: bold;
 }
 
 .expo-christmas-credit {
-  font-family: 'Montserrat', sans-serif;
   font-size: 10px;
   text-align: center;
   margin-top: 10px;
-  color: #aaa;
+  color: #bbb;
 }
