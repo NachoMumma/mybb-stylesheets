@@ -15,7 +15,7 @@
   width: 600px;
   height: auto;
   background: url('https://images2.imgbox.com/79/19/s7JwNgUb_o.png') no-repeat center top;
-  background-size: contain;
+  background-size: cover;
   z-index: 5;
   pointer-events: none;
 }
