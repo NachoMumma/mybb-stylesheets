@@ -2,7 +2,6 @@
 
 .expo-christmas-wrapper {
   width: 600px;
-  padding: 0;
   border: 3px solid #3e1a45;
   border-radius: 300px 300px 0 0;
   background-color: rgba(31, 5, 41, 0.85);
@@ -18,7 +17,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 600px;
-  height: 200px;
+  height: 525px;
   background: url('https://images2.imgbox.com/79/19/s7JwNgUb_o.png') no-repeat center top;
   background-size: contain;
   z-index: 1;
@@ -27,10 +26,8 @@
 
 .expo-christmas-container {
   position: relative;
-  margin-top: 150px;
-  border: 2px solid #6a287d;
-  border-image: linear-gradient(transparent 0%, #3e1a45 50%, transparent 100%) 1;
-  padding: 100px 25px 25px 25px;
+  margin-top: 500px; /* start just under image */
+  padding: 25px;
   text-align: justify;
   font-size: 14px;
   line-height: 1.5;
