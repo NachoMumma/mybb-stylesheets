@@ -1,52 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 .aeson-crows-wrapper {
-  width: 440px;
-  padding: 25px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 15px;
+  padding-bottom: 950px;
   border: 3px solid #3c8294;
   background-color: #424c53;
   position: relative;
-  margin: 0 auto;
   box-sizing: border-box;
   overflow: visible;
 }
 
-.aeson-crows-text {
+.aeson-crows-inner {
   position: relative;
   z-index: 2;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.65);
   border: 2px solid #ff7518;
   border-image: linear-gradient(to bottom, #3c8294 40%, transparent) 0.5;
-  padding: 20px;
   text-align: justify;
   font-size: 14px;
   line-height: 150%;
   font-family: Poppins, sans-serif;
   color: #fff;
-  margin-bottom: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.aeson-crows-text b {
+.aeson-crows-inner b {
   color: #6ccff6;
+  font-weight: bold;
 }
 
 .aeson-crows-image {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
-  width: 720px;
+  bottom: -5%;
+  transform: translateX(-54%);
+  width: 725px;
   height: 1000px;
   background: url('https://images2.imgbox.com/6e/be/iQn0Ns7b_o.png') no-repeat center bottom;
-  background-size: cover;
-  top: 100%;
-  margin-top: -2px;
+  background-size: 100% auto;
   z-index: 1;
   pointer-events: none;
 }
 
-.nacho-credit {
+.aeson-crows-credit {
   font-size: 10px;
+  font-family: Poppins, sans-serif;
   color: #aaa;
   text-align: center;
-  font-family: Poppins, sans-serif;
   margin-top: 6px;
 }
