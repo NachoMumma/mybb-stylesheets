@@ -13,7 +13,6 @@
 
 .expo-christmas-image {
   display: block;
-  margin-bottom: 10px;
   width: 100%;
   max-width: 600px;
   margin: -50px auto -80px; /* pulls the image into the rounded top, adjust as needed */
@@ -25,6 +24,7 @@
 
 .expo-christmas-image img {
   display: block;
+  margin-bottom: 10px;
   width: 100%;
   height: auto;
   pointer-events: none;
