@@ -4,7 +4,7 @@
   width: 600px;
   margin: 0 auto;
   padding: 20px 20px 300px 20px;
-  border: 3px solid #682860;
+  border: 3px solid #FF0000;
   border-radius: 0 0 0 300px;
   background-color: #461d26;
   background-image: url('https://images2.imgbox.com/c5/8f/EYEQql4e_o.png');
@@ -18,7 +18,7 @@
 .expo-2-inner {
   border-width: 2px 2px;
   border-style: solid;
-  border-image: linear-gradient(to bottom, #682860 50%, transparent) 1;
+  border-image: linear-gradient(to bottom, #FF0000 50%, transparent) 1;
   padding: 20px;
   text-align: justify;
   font-size: 14px;
@@ -28,7 +28,7 @@
 }
 
 .expo-2-inner b {
-  color: #c76396;
+  color: #FF0000;
   font-weight: bold;
 }
 
