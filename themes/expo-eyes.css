@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.expo-eyes-wrapper {
+  width: 550px;
+  margin: 0 auto;
+  padding: 20px 20px 550px 20px;
+  background-color: #ff5b80;
+  background-image: url('https://images2.imgbox.com/b8/3c/96ccwzBh_o.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 550px auto;
+  box-sizing: border-box;
+  position: relative;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #ffd184;
+  border-radius: 0;
+}
+
+.expo-eyes-inner {
+  border-width: 1px 1px;
+  border-style: solid;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-top: none;
+  border-bottom: none;
+  border-image: linear-gradient(transparent 0%, #ffd184 50%, transparent 100%) 1;
+  padding: 20px;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 150%;
+  font-family: Poppins, sans-serif;
+  color: #ffffff;
+}
+
+.expo-eyes-inner b {
+  color: #ffd184;
+  font-weight: bold;
+}
+
+.expo-eyes-credit {
+  text-align: center;
+  font-size: 10px;
+  font-family: Poppins, sans-serif;
+  color: #ddd;
+  margin-top: 6px;
+}
