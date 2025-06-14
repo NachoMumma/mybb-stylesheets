@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.rouge-2-wrapper {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px 20px 500px 20px;
+  background-color: #1d0408;
+  background-image: url('https://images2.imgbox.com/c4/8b/Gb0vVngD_o.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 600px auto;
+  border: 3px solid #32cd32;
+  border-radius: 0 0 300px 300px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.rouge-2-inner {
+  padding: 20px;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 150%;
+  font-family: Poppins, sans-serif;
+  color: #ffffff;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-image: linear-gradient(transparent 0%, #32cd32 50%, transparent 100%) 1;
+  border-style: solid;
+  border-width: 0 1px;
+}
+
+.rouge-2-inner b {
+  color: #32cd32;
+  font-weight: bold;
+}
+
+.rouge-2-credit {
+  text-align: center;
+  font-size: 10px;
+  font-family: Poppins, sans-serif;
+  color: #888;
+  margin-top: 6px;
+}
