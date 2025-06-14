@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.rouge-1-wrapper {
+  position: relative;
+  width: 480px;
+  margin: 0 auto;
+  padding-top: 300px; /* leave room for the image */
+}
+
+/* Floating image on the LEFT */
+.rouge-1-image {
+  position: absolute;
+  top: -240px;
+  left: -60px; /* float slightly outside the main arch */
+  width: 400px;
+  height: auto;
+  background: url('https://images2.imgbox.com/fa/73/qzDX2uE9_o.png') no-repeat left top;
+  background-size: contain;
+  z-index: 5;
+  pointer-events: none;
+}
+
+/* Arch container */
+.rouge-1-container {
+  width: 400px;
+  padding: 20px;
+  border: 5px solid #cdb5a7;
+  border-radius: 600px 600px 0 0;
+  background-color: #2f1c1c;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;
+  overflow: visible;
+  z-index: 1;
+}
+
+/* Inner text box */
+.rouge-1-inner {
+  position: relative;
+  z-index: 2;
+  padding: 20px 25px;
+  margin-top: 150px;
+  text-align: justify;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #fceeee;
+  background-color: rgba(55, 30, 30, 0.85);
+  box-sizing: border-box;
+
+  border-width: 0 2px 0 2px;
+  border-style: solid;
+  border-image-source: linear-gradient(to bottom, transparent 15%, #cdb5a7 50%, transparent 85%);
+  border-image-slice: 1;
+}
+
+/* Bold speech */
+.rouge-1-inner b {
+  color: #e8a0ae;
+  font-weight: bold;
+}
+
+/* Credit */
+.rouge-1-credit {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+  color: #aaa;
+}
