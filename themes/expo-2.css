@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.expo-2-wrapper {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px 20px 450px 20px;
+  border: 3px solid #682860;
+  border-radius: 0 0 300px 0;
+  background-color: #461d26;
+  background-image: url('https://images2.imgbox.com/c5/8f/EYEQql4e_o.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 600px auto;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.expo-2-inner {
+  border-width: 2px 2px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #682860 50%, transparent) 1;
+  padding: 20px;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 150%;
+  font-family: Poppins, sans-serif;
+  color: #ffffff;
+}
+
+.expo-2-inner b {
+  color: #c76396;
+  font-weight: bold;
+}
+
+.expo-2-credit {
+  text-align: center;
+  font-size: 10px;
+  font-family: Poppins, sans-serif;
+  color: #bbb;
+  margin-top: 6px;
+}
