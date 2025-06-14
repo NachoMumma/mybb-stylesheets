@@ -24,7 +24,7 @@
   border-right: 1px solid transparent;
   border-top: none;
   border-bottom: none;
-  border-image: linear-gradient(transparent 0%, #800000 35%, transparent 100%) 1;
+  border-image: linear-gradient(transparent 0%, #800000 35%, transparent 75%) 1;
   padding: 20px;
   text-align: justify;
   font-size: 14px;
