@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.aeson-crows-wrapper {
+  width: 440px;
+  padding: 25px;
+  border: 3px solid #3c8294;
+  background-color: #424c53;
+  position: relative;
+  overflow: visible;
+  box-sizing: border-box;
+}
+
+.aeson-crows-text {
+  position: relative;
+  z-index: 2;
+  border: 2px solid #ff7518;
+  border-image: linear-gradient(to bottom, #3c8294 40%, transparent) 0.5;
+  padding: 20px;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 150%;
+  font-family: Poppins, sans-serif;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.aeson-crows-text b {
+  color: #6ccff6;
+}
+
+.aeson-crows-image {
+  position: absolute;
+  left: 49%;
+  transform: translateX(-54%);
+  width: 720px;
+  height: 1000px;
+  background: url('https://images2.imgbox.com/6e/be/iQn0Ns7b_o.png') no-repeat center bottom;
+  background-size: cover;
+  top: 100%;
+  margin-top: -2px;
+  z-index: 1;
+}
