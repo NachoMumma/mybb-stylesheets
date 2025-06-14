@@ -6,9 +6,8 @@
   border: 3px solid #3c8294;
   background-color: #424c53;
   position: relative;
-  overflow: visible;
-  box-sizing: border-box;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .aeson-crows-text {
@@ -31,12 +30,12 @@
 
 .aeson-crows-image {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
+  left: 49%;
+  transform: translateX(-54%);
+  width: 720px;
   height: 1000px;
   background: url('https://images2.imgbox.com/6e/be/iQn0Ns7b_o.png') no-repeat center bottom;
-  background-size: contain;
+  background-size: cover;
   top: 100%;
   margin-top: -2px;
   z-index: 1;
@@ -47,6 +46,6 @@
   font-size: 10px;
   color: #aaa;
   text-align: center;
-  margin-top: -20px;
   font-family: Poppins, sans-serif;
+  margin-top: 6px;
 }
