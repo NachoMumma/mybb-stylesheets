@@ -12,29 +12,33 @@
 }
 
 .expo-christmas-image {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 600px;
-  height: 250px;
-  background: url('https://images2.imgbox.com/79/19/s7JwNgUb_o.png') no-repeat center top;
-  background-size: contain;
-  z-index: 1;
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: -50px auto -80px; /* pulls the image into the rounded top, adjust as needed */
+  background: none;
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.expo-christmas-image img {
+  display: block;
+  width: 100%;
+  height: auto;
   pointer-events: none;
 }
 
 .expo-christmas-container {
   position: relative;
-  margin-top: 150px; /* start just under image */
-  padding: 25px;
+  padding: 20px 40px;
   text-align: justify;
   font-size: 14px;
   line-height: 1.5;
   font-family: 'Montserrat', sans-serif;
   color: #f7e9ff;
   background-color: transparent;
-  z-index: 2;
+  z-index: 1;
 }
 
 .expo-christmas-container b {
