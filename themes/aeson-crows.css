@@ -1,8 +1,4 @@
-.aeson-crows-outer {
-  width: 720px;
-  position: relative;
-  margin: 0 auto;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 .aeson-crows-wrapper {
   width: 440px;
@@ -10,6 +6,7 @@
   border: 3px solid #3c8294;
   background-color: #424c53;
   position: relative;
+  overflow: visible;
   box-sizing: border-box;
   margin: 0 auto;
 }
@@ -36,13 +33,14 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 720px;
+  width: 100%;
   height: 1000px;
   background: url('https://images2.imgbox.com/6e/be/iQn0Ns7b_o.png') no-repeat center bottom;
-  background-size: cover;
+  background-size: contain;
   top: 100%;
   margin-top: -2px;
   z-index: 1;
+  pointer-events: none;
 }
 
 .nacho-credit {
