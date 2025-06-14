@@ -3,20 +3,14 @@
 .expo-3-wrapper {
   width: 600px;
   margin: 0 auto;
+  padding: 300px 20px 20px 20px;
+  background-image: url('https://images2.imgbox.com/c4/8b/Gb0vVngD_o.png');
   background-color: #100406;
+  background-position: center top;
   border: 3px solid #4d050a;
   border-radius: 300px 0 0 0;
   box-sizing: border-box;
-  overflow: hidden;
   position: relative;
-}
-
-.expo-3-image {
-  width: 100%;
-  height: 300px;
-  background: url('https://images2.imgbox.com/c4/8b/Gb0vVngD_o.png') no-repeat center top;
-  background-size: cover;
-  display: block;
 }
 
 .expo-3-inner {
