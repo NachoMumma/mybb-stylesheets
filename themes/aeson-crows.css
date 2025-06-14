@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+.aeson-crows-container {
+  width: 720px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden; /* 👈 contains the image! */
+}
+
 .aeson-crows-wrapper {
   width: 440px;
   padding: 25px;
@@ -30,8 +37,8 @@
 
 .aeson-crows-image {
   position: absolute;
-  left: 49%;
-  transform: translateX(-54%);
+  left: 50%;
+  transform: translateX(-50%);
   width: 720px;
   height: 1000px;
   background: url('https://images2.imgbox.com/6e/be/iQn0Ns7b_o.png') no-repeat center bottom;
