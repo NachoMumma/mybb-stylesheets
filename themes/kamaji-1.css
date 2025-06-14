@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+.kamaji-1-wrapper {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.kamaji-1-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 10px;
+  position: relative;
+}
+
+.kamaji-1-textbox {
+  flex: 1;
+  min-width: 300px;
+  min-height: 350px;
+  background-color: #1a0d24;
+  border: 5px solid #b66dff;
+  padding: 20px;
+  margin-right: -50px;
+  position: relative;
+  z-index: 0;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px #b66dff55;
+}
+
+.kamaji-1-inner {
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(transparent 0%, #dcaaff 50%, transparent 100%) 1;
+  padding: 15px;
+  margin: 5px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: justify;
+  color: #f2ecff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.kamaji-1-inner b {
+  color: #dcaaff;
+  font-weight: bold;
+}
+
+.kamaji-1-image {
+  min-width: 300px;
+  max-width: 450px;
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.kamaji-1-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin-bottom: -50px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px #dcaaff88;
+}
+
+.kamaji-1-credit {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+  color: #888;
+}
