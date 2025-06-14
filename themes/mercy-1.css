@@ -5,6 +5,9 @@
   max-width: 600px;
   margin: 0 auto;
   background-color: #f4f1eb;
+  background-image: url('https://images2.imgbox.com/20/90/YQwJX5xR_o.png');
+  background-repeat: repeat;
+  background-size: contain;
   border: 2px solid #c5bfa8;
   border-radius: 12px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
@@ -25,6 +28,8 @@
   line-height: 1.7;
   text-align: justify;
   color: #3e322c;
+  background-color: rgba(255, 255, 255, 0.6); /* optional for contrast */
+  backdrop-filter: blur(0.3px); /* optional subtle enhancement */
 }
 
 .mercy-1-inner b {
