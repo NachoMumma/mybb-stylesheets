@@ -1,11 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-.rouge-left-flexwrap {
+.rouge-1-wrapper {
   max-width: 850px;
-  margin: auto;
+  margin: 0 auto;
   padding: 15px;
   box-sizing: border-box;
   overflow: hidden;
+}
+
+.rouge-1-flex {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
@@ -13,61 +16,58 @@
   position: relative;
 }
 
-.rouge-left-image {
+.rouge-1-image {
   min-width: 300px;
   max-width: 450px;
   flex: 1;
   position: relative;
-  flex-grow: 0;
-  margin-right: -5%;
   z-index: 1;
 }
 
-.rouge-left-image img {
-  width: auto;
+.rouge-1-image img {
+  width: 100%;
   height: auto;
   object-fit: cover;
-  max-width: 100%;
+  display: block;
+  margin-bottom: -50px;
 }
 
-.rouge-left-textbox {
+.rouge-1-textbox {
   flex: 1;
-  background-color: #ffdab9;
-  border: 10px solid #ffa089;
-  padding: 20px;
   min-width: 300px;
+  min-height: 350px;
+  background-color: #0d0d0d;
+  border: 5px solid #39ff14;
+  padding: 15px;
+  margin-left: -50px;
   position: relative;
   z-index: 0;
-  min-height: 350px;
   box-sizing: border-box;
 }
 
-.rouge-left-inner {
-  border-width: 1px 1px;
-  border-style: solid;
+.rouge-1-inner {
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
-  border-top: none;
-  border-bottom: none;
-  border-image: linear-gradient(transparent 0%, #ffa089 50%, transparent 100%) 1;
-  padding: 15px;
-  font-family: 'Roboto', sans-serif;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(transparent 0%, #39ff14 50%, transparent 100%) 1;
+  padding: 10px;
+  font-family: 'Raleway', sans-serif;
   font-size: 14px;
-  line-height: 150%;
+  line-height: 1.5;
   text-align: justify;
-  color: #000;
-  text-shadow: 1px 1px 1px #fff;
+  color: #f1f1f1;
+  text-shadow: 1px 1px 1px #000;
 }
 
-.rouge-left-inner b {
-  color: #fa8072; /* salmon-pink speech */
+.rouge-1-inner b {
+  color: #39ff14;
   font-weight: bold;
 }
 
-.rouge-left-credit {
-  font-family: 'Roboto', sans-serif;
+.rouge-1-credit {
   font-size: 10px;
   text-align: center;
   margin-top: 10px;
-  color: #888;
+  color: #666;
 }
