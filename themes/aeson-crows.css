@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.aeson-crows-outer {
+  width: 720px;
+  position: relative;
+  margin: 0 auto;
+}
 
 .aeson-crows-wrapper {
   width: 440px;
@@ -6,8 +10,8 @@
   border: 3px solid #3c8294;
   background-color: #424c53;
   position: relative;
-  overflow: visible;
   box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .aeson-crows-text {
@@ -30,8 +34,8 @@
 
 .aeson-crows-image {
   position: absolute;
-  left: 49%;
-  transform: translateX(-54%);
+  left: 50%;
+  transform: translateX(-50%);
   width: 720px;
   height: 1000px;
   background: url('https://images2.imgbox.com/6e/be/iQn0Ns7b_o.png') no-repeat center bottom;
