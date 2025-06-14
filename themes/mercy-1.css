@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Playfair+Display&display=swap');
+
+.mercy-1-wrapper {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f4f1eb;
+  border: 2px solid #c5bfa8;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.mercy-1-image {
+  width: 100%;
+  height: 400px;
+  background: url('https://images2.imgbox.com/9c/1b/C1M5N8AL_o.png') no-repeat center top;
+  background-size: cover;
+}
+
+.mercy-1-inner {
+  padding: 24px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: justify;
+  color: #3e322c;
+}
+
+.mercy-1-inner b {
+  font-family: 'Playfair Display', serif;
+  color: #865b3c;
+  font-weight: bold;
+}
+
+.mercy-1-credit {
+  text-align: center;
+  font-size: 10px;
+  font-family: 'Cormorant Garamond', serif;
+  color: #888;
+  margin-top: 6px;
+}
