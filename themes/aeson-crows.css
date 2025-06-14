@@ -4,11 +4,11 @@
   width: 720px;
   margin: 0 auto;
   position: relative;
-  overflow: hidden; /* 👈 contains the image! */
+  overflow: visible;
 }
 
 .aeson-crows-wrapper {
-  width: 460px;
+  width: 440px;
   padding: 25px;
   border: 3px solid #3c8294;
   background-color: #424c53;
@@ -37,14 +37,12 @@
 
 .aeson-crows-image {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  bottom: -2px;
   width: 720px;
   height: 1000px;
   background: url('https://images2.imgbox.com/6e/be/iQn0Ns7b_o.png') no-repeat center bottom;
   background-size: cover;
-  top: 100%;
-  margin-top: -2px;
   z-index: 1;
   pointer-events: none;
 }
