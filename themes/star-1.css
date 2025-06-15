@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 .star-1-wrapper {
   width: 600px;
@@ -20,7 +20,7 @@
   text-align: justify;
   font-size: 14px;
   line-height: 1.6;
-  font-family: 'Special Elite', serif;
+  font-family: 'Montserrat', sans-serif;
   color: #f8f8f2;
   background-color: rgba(6, 4, 4, 0.75);
   border-left: 1px solid transparent;
@@ -38,7 +38,7 @@
 .star-1-credit {
   text-align: center;
   font-size: 10px;
-  font-family: 'Special Elite', serif;
+  font-family: 'Montserrat', sans-serif;
   color: #888;
   margin-top: 6px;
 }
