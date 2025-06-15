@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+.star-1-wrapper {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px 20px 600px 20px;
+  background-color: #060404;
+  background-image: url('https://images2.imgbox.com/f6/9d/2fb3Q82j_o.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 600px auto;
+  border: 3px solid #d8b87d;
+  border-radius: 0 0 300px 300px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.star-1-inner {
+  padding: 20px;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: 'Special Elite', serif;
+  color: #f8f8f2;
+  background-color: rgba(6, 4, 4, 0.75);
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-style: solid;
+  border-width: 0 1px;
+  border-image: linear-gradient(transparent 0%, #d8b87d 50%, transparent 100%) 1;
+}
+
+.star-1-inner b {
+  color: #ffe761;
+  font-weight: bold;
+}
+
+.star-1-credit {
+  text-align: center;
+  font-size: 10px;
+  font-family: 'Special Elite', serif;
+  color: #888;
+  margin-top: 6px;
+}
