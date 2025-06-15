@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+.bkochi-4-wrapper {
+  width: 600px;
+  margin: 0 auto;
+  padding: 950px 20px 20px 20px;
+  background-color: #2f0101;
+  background-image: url('https://images2.imgbox.com/43/aa/L6Unv0iM_o.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 600px auto;
+  border: 3px solid #ffbb00;
+  border-radius: 300px 300px 0 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.bkochi-4-inner {
+  padding: 20px;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 150%;
+  font-family: 'Special Elite', serif;
+  color: #ffeae3;
+  background-color: rgba(47, 1, 1, 0.75);
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-style: solid;
+  border-width: 0 1px;
+  border-image: linear-gradient(transparent 0%, #ffbb00 50%, transparent 100%) 1;
+}
+
+.bkochi-4-inner b {
+  color: #ffd966;
+  font-weight: bold;
+}
+
+.bkochi-4-credit {
+  text-align: center;
+  font-size: 10px;
+  font-family: 'Special Elite', serif;
+  color: #888;
+  margin-top: 6px;
+}
