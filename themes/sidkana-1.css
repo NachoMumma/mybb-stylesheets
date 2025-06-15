@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.sidkana-1-wrapper {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px 20px 500px 20px; /* arch space */
+  background-color: #3d6682;
+  background-image: url('https://images2.imgbox.com/dc/4f/Cb715iOb_o.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 600px auto;
+  border: 3px solid #d3ecff;
+  border-radius: 0 0 300px 300px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.sidkana-1-inner {
+  padding: 20px;
+  text-align: justify;
+  font-size: 15px;
+  line-height: 1.7;
+  font-family: 'Montserrat', sans-serif;
+  color: #f0f8ff;
+  background-color: rgba(61, 102, 130, 0.75);
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-style: solid;
+  border-width: 0 1px;
+  border-image: linear-gradient(transparent 0%, #d3ecff 50%, transparent 100%) 1;
+}
+
+.sidkana-1-inner b {
+  color: #ffd4f0;
+  font-weight: bold;
+}
+
+.sidkana-1-credit {
+  text-align: center;
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+  color: #eee;
+  margin-top: 6px;
+}
