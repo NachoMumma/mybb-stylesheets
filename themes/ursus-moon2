@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+.ursus-moon-wrapper {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 900px; /* room for image */
+  background-color: #12151e;
+  border: 3px solid #98b5d6;
+  border-radius: 0 0 300px 300px;
+  position: relative;
+  box-sizing: border-box;
+  font-family: 'Special Elite', serif;
+  color: #e2ecf1;
+}
+
+.ursus-moon-image {
+  position: absolute;
+  left: 50%;
+  bottom: -5%;
+  transform: translateX(-50%);
+  width: 720px;
+  height: 1000px;
+  background: url('https://images2.imgbox.com/1e/37/Hd2DYQv4_o.png') no-repeat center bottom;
+  background-size: 100% auto;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.ursus-moon-inner {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid #436d99;
+  border-image: linear-gradient(to bottom, #98b5d6 40%, transparent) 1;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 1.5;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.ursus-moon-inner b {
+  color: #c8ddf0;
+  font-weight: bold;
+}
+
+.ursus-moon-credit {
+  font-family: 'Special Elite', serif;
+  font-size: 10px;
+  color: #98b5d6;
+  text-align: center;
+  margin-top: 6px;
+}
