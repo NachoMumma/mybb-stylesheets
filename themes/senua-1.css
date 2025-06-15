@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.senua-1-wrapper {
+  width: 600px;
+  margin: 0 auto;
+  padding: 300px 20px 20px 20px;
+  background-image: url('https://images2.imgbox.com/de/56/CyIXN0re_o.png');
+  background-color: #040501;
+  background-position: center top;
+  background-size: 600px auto;
+  border: 3px solid #2e2c2a;
+  border-radius: 300px 0 0 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.senua-1-inner {
+  padding: 20px;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 150%;
+  font-family: Poppins, sans-serif;
+  color: #d6d6d6;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-image: linear-gradient(transparent 0%, #97b57f 50%, transparent 100%) 1;
+  border-style: solid;
+  border-width: 0 1px;
+}
+
+.senua-1-inner b {
+  color: #a8d67f;
+  font-weight: bold;
+}
+
+.senua-1-credit {
+  text-align: center;
+  font-size: 10px;
+  font-family: Poppins, sans-serif;
+  color: #666;
+  margin-top: 6px;
+}
