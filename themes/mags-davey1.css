@@ -4,23 +4,19 @@
   width: 600px;
   margin: 0 auto;
   text-align: center;
-  overflow: hidden; 
-  position: relative;
 }
 
-.mags-davey1-container {
+.mags-davey1-img {
   width: 600px;
-  margin: 0 auto;
-  text-align: center;
-  overflow: hidden; /* ensures float containment */
-  position: relative;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto -15px auto; /* negative bottom margin removes gap */
 }
 
 .mags-davey1-text {
-  clear: both;
   width: 65%;
   margin: 0 auto;
-  padding: 30px 20px 20px 20px;
+  padding: 25px;
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   line-height: 1.6;
