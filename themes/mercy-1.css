@@ -14,13 +14,17 @@
 }
 
 .mercy-1-text {
+  width: 85%; /* narrower to match arch width */
+  margin: 0 auto;
   padding: 30px;
   font-family: 'Cormorant Garamond', serif;
   font-size: 16px;
   line-height: 1.7;
   color: #2e2e2e;
-  background-color: #6ae189;
+  background-color: #e3f8ee;
   border-radius: 0 0 16px 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
 
 .mercy-1-text b {
   font-family: 'Playfair Display', serif;
