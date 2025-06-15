@@ -1,57 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
 .ursus-moon2-wrapper {
-  max-width: 600px;
-  margin: 0 auto;
-  font-family: 'Special Elite', serif;
-  color: #eee;
-}
-
-.ursus-moon2-container {
-  background-color: #1a1a1a;
-  border: 3px solid #a73131;
+  width: 500px;
+  border: 3px solid #6b2e2e;
   border-radius: 0 0 300px 300px;
-  overflow: hidden;
+  background-color: rgba(10, 10, 10, 0.85);
   position: relative;
-  padding: 50px 30px 330px 30px; /* top/bottom spacing */
-  box-shadow: 0 0 12px #a7313170;
+  margin: 0 auto;
   box-sizing: border-box;
-}
-
-.ursus-moon2-inner {
-  border-left: 1px solid transparent;
-  border-right: 1px solid transparent;
-  border-width: 2px;
-  border-style: solid;
-  border-image: linear-gradient(transparent 0%, #a73131 50%, transparent 100%) 1;
-  font-size: 14px;
-  line-height: 1.6;
-  text-align: justify;
-  color: #f8f8f8;
-  padding: 10px;
-}
-
-.ursus-moon2-inner b {
-  color: #ff5959;
-  font-weight: bold;
+  overflow: visible;
 }
 
 .ursus-moon2-image {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  display: block;
   width: 100%;
-  max-width: 500px;
-  height: auto;
-  pointer-events: none;
+  max-width: 600px;
+  margin: -80px auto 0;
+  background: none;
+  position: relative;
   z-index: 2;
+  pointer-events: none;
 }
 
 .ursus-moon2-image img {
   display: block;
+  margin-top: 30px;
   width: 100%;
   height: auto;
+  pointer-events: none;
+}
+
+.ursus-moon2-container {
+  position: relative;
+  padding: 40px 20px 20px 20px;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: 'Special Elite', serif;
+  color: #f1eaea;
+  background-color: transparent;
+  z-index: 1;
+}
+
+.ursus-moon2-container b {
+  color: #d45f5f;
+  font-weight: bold;
 }
 
 .ursus-moon2-credit {
