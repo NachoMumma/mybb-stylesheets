@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fresca&display=swap');
 
 .senua-1-wrapper {
   width: 600px;
@@ -19,7 +19,7 @@
   text-align: justify;
   font-size: 14px;
   line-height: 150%;
-  font-family: Poppins, sans-serif;
+  font-family: Fresca, sans-serif;
   color: #d6d6d6;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
@@ -36,7 +36,7 @@
 .senua-1-credit {
   text-align: center;
   font-size: 10px;
-  font-family: Poppins, sans-serif;
+  font-family: Fresca, sans-serif;
   color: #666;
   margin-top: 6px;
 }
