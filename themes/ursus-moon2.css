@@ -1,54 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
-.ursus-moon-wrapper {
-  width: 500px;
+.ursus-moon2-wrapper {
+  max-width: 600px;
   margin: 0 auto;
-  padding: 20px;
-  padding-bottom: 900px; /* room for image */
-  background-color: #12151e;
-  border: 3px solid #98b5d6;
-  border-radius: 0 0 300px 300px;
-  position: relative;
-  box-sizing: border-box;
   font-family: 'Special Elite', serif;
-  color: #e2ecf1;
+  color: #eee;
 }
 
-.ursus-moon-image {
-  position: absolute;
-  left: 50%;
-  bottom: -5%;
-  transform: translateX(-50%);
-  width: 720px;
-  height: 1000px;
-  background: url('https://images2.imgbox.com/1e/37/Hd2DYQv4_o.png') no-repeat center bottom;
-  background-size: 100% auto;
-  z-index: 1;
-  pointer-events: none;
-}
-
-.ursus-moon-inner {
+.ursus-moon2-container {
+  background-color: #1e1e1e;
+  border: 3px solid #a73131;
+  border-radius: 0 0 300px 300px;
+  overflow: hidden;
   position: relative;
-  z-index: 2;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.6);
-  border: 2px solid #436d99;
-  border-image: linear-gradient(to bottom, #98b5d6 40%, transparent) 1;
-  text-align: justify;
+  padding: 30px 25px 300px 25px; /* bottom reserved for image */
+  box-shadow: 0 0 10px #a7313188;
+}
+
+.ursus-moon2-inner {
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-style: solid;
+  border-width: 0 1px;
+  border-image: linear-gradient(transparent 0%, #a73131 50%, transparent 100%) 1;
   font-size: 14px;
   line-height: 1.5;
-  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  text-align: justify;
+  color: #f8f8f8;
 }
 
-.ursus-moon-inner b {
-  color: #c8ddf0;
+.ursus-moon2-inner b {
+  color: #e05555;
   font-weight: bold;
 }
 
-.ursus-moon-credit {
-  font-family: 'Special Elite', serif;
+.ursus-moon2-image {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 300px;
+  background: url('https://images2.imgbox.com/1e/37/Hd2DYQv4_o.png') no-repeat center bottom;
+  background-size: contain;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.ursus-moon2-credit {
   font-size: 10px;
-  color: #98b5d6;
   text-align: center;
   margin-top: 6px;
+  color: #aaa;
+  font-family: 'Special Elite', serif;
 }
