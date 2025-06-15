@@ -10,11 +10,11 @@
   width: 600px;
   display: block;
   margin: 0 auto;
-  margin-left: -25px;
+  margin-left: -30px;
 }
 
 .mags-davey1-text {
-  width: 65%;
+  width: 70%;
   margin: -40px auto 0 auto; /* ← pulls text upward */
   padding: 25px;
   font-family: 'Montserrat', sans-serif;
