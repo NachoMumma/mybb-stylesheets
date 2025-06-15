@@ -11,12 +11,13 @@
   height: 450px;
   background: url('https://images2.imgbox.com/1f/5c/ElZxY8wZ_o.png') no-repeat center top;
   background-size: contain;
+  margin-left: -25px;
 }
 
 .mags-davey1-text {
-  width: 50%;
-  margin: 0 auto;
-  padding: 30px;
+  width: 65%;
+  margin: 10px auto 0 auto;
+  padding: 25px;
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   line-height: 1.6;
