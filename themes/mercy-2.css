@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+.mercy-2-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: #f4f1eb;
+  box-sizing: border-box;
+}
+
+.mercy-2-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.mercy-2-textbox {
+  flex: 1 1 300px;
+  background-color: #f4f1eb;
+  padding: 20px;
+  border: 2px solid #5a4b40;
+  border-radius: 12px;
+  font-family: 'Special Elite', cursive;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #2c1f1b;
+  text-align: justify;
+}
+
+.mercy-2-inner p {
+  margin-bottom: 1em;
+}
+
+.mercy-2-inner b {
+  color: #3d1e18;
+  font-weight: bold;
+}
+
+.mercy-2-image {
+  flex: 0 0 200px;
+  height: auto;
+  background: url('https://i.imgur.com/FfUPGWF.png') no-repeat center center;
+  background-size: contain;
+  width: 200px;
+  min-height: 150px;
+}
+
+.mercy-2-credit {
+  text-align: center;
+  font-size: 10px;
+  font-family: 'Special Elite', cursive;
+  color: #888;
+  margin-top: 6px;
+}
