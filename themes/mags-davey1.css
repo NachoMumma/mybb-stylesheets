@@ -8,14 +8,13 @@
 
 .mags-davey1-img {
   width: 600px;
-  max-width: 100%;
   display: block;
-  margin: 0 auto -15px auto; /* negative bottom margin removes gap */
+  margin: 0 auto;
 }
 
 .mags-davey1-text {
   width: 65%;
-  margin: 0 auto;
+  margin: -40px auto 0 auto; /* ← pulls text upward */
   padding: 25px;
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
