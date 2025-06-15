@@ -5,7 +5,6 @@
   margin: 0 auto;
   text-align: center;
   position: relative;
-  line-height: 0;
 }
 
 .mags-davey1-image {
@@ -31,6 +30,7 @@
   background-color: #fdf5e7;
   border-radius: 0 0 16px 16px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  text-align: justify;
 }
 
 .mags-davey1-text b {
