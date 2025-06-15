@@ -4,14 +4,16 @@
   width: 600px;
   margin: 0 auto;
   text-align: center;
+  position: relative;
 }
 
 .mags-davey1-image {
-  width: 100%;
-  height: 450px;
+  width: 600px;
   background: url('https://images2.imgbox.com/1f/5c/ElZxY8wZ_o.png') no-repeat center top;
   background-size: contain;
   margin-left: -25px;
+  aspect-ratio: 3 / 2;
+  display: block;
 }
 
 .mags-davey1-text {
