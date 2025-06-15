@@ -9,11 +9,14 @@
 
 .mags-davey1-image {
   width: 600px;
+  height: auto;
   background: url('https://images2.imgbox.com/1f/5c/ElZxY8wZ_o.png') no-repeat center top;
   background-size: contain;
   margin-left: -25px;
-  aspect-ratio: 3 / 2;
   display: block;
+  padding: 0;
+  margin-bottom: -10px;
+  line-height: 0;
 }
 
 .mags-davey1-text {
