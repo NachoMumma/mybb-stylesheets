@@ -4,24 +4,18 @@
   width: 600px;
   margin: 0 auto;
   text-align: center;
-  position: relative;
 }
 
-.mags-davey1-image {
+.mags-davey1-img {
   width: 600px;
-  height: auto;
-  aspect-ratio: 3 / 2;
   margin-left: -25px;
-  background: url('https://images2.imgbox.com/1f/5c/ElZxY8wZ_o.png') no-repeat center top;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
   display: block;
 }
 
 .mags-davey1-text {
   width: 65%;
-  margin: 10px auto 0 auto;
-  padding: 25px;
+  margin: 0 auto;
+  padding: 20px;
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   line-height: 1.6;
