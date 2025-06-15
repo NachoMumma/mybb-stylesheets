@@ -63,9 +63,8 @@
   height: auto;
   object-fit: cover;
   display: block;
-  margin-bottom: -50px;
+  margin-bottom: -25px;
   border-radius: 10px;
-  box-shadow: 0 0 12px #73524588;
 }
 
 .mercy-2-credit {
