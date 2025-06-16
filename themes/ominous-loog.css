@@ -1,46 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
-.onimous-loog-wrapper {
-  width: 400px;
-  margin: 30px auto;
-  background-color: #111111;
-  border: 3px solid #c84b4b;
-  border-radius: 20px;
-  padding: 20px;
-  box-sizing: border-box;
+.ominous-loog-container {
+  width: 600px;
+  margin: 0 auto;
   text-align: center;
-  position: relative;
 }
 
-.onimous-loog-image img {
-  width: 150px;
-  height: auto;
-  display: block;
-  margin: 0 auto 10px auto;
-  filter: drop-shadow(0 0 4px #ffbdbd);
+.ominous-loog-image {
+  width: 100%;
+  height: 350px;
+  background: url('https://f2.toyhou.se/file/f2-toyhou-se/images/80460405_5gKqKpoIuMUUaqm.png') no-repeat center top;
+  background-size: contain;
 }
 
-.onimous-loog-text {
-  font-family: 'Jost', sans-serif;
-  font-size: 14px;
+.ominous-loog-text {
+  width: 65%;
+  margin: 0 auto;
+  padding: 30px;
+  font-family: 'Courier Prime', monospace;
+  font-size: 15px;
   line-height: 1.6;
-  color: #fce4ec;
-  text-align: justify;
-  background-color: rgba(200, 75, 75, 0.1);
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: inset 0 0 10px rgba(255, 100, 100, 0.2);
+  color: #f5f5f5;
+  background-color: #1c1c1c;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.onimous-loog-text b {
-  color: #ff8080;
+.ominous-loog-text b {
+  color: #ff4f4f;
   font-weight: bold;
 }
 
-.onimous-loog-credit {
+.ominous-loog-credit {
   text-align: center;
   font-size: 10px;
-  font-family: 'Jost', sans-serif;
-  color: #888;
-  margin-top: 10px;
+  font-family: 'Courier Prime', monospace;
+  color: #666;
+  margin-top: 6px;
 }
