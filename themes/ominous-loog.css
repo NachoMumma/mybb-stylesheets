@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+.onimous-loog-wrapper {
+  width: 400px;
+  margin: 30px auto;
+  background-color: #111111;
+  border: 3px solid #c84b4b;
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+}
+
+.onimous-loog-image img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px auto;
+  filter: drop-shadow(0 0 4px #ffbdbd);
+}
+
+.onimous-loog-text {
+  font-family: 'Jost', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #fce4ec;
+  text-align: justify;
+  background-color: rgba(200, 75, 75, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgba(255, 100, 100, 0.2);
+}
+
+.onimous-loog-text b {
+  color: #ff8080;
+  font-weight: bold;
+}
+
+.onimous-loog-credit {
+  text-align: center;
+  font-size: 10px;
+  font-family: 'Jost', sans-serif;
+  color: #888;
+  margin-top: 10px;
+}
