@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+.lux-curl-wrap {
+  max-width: 850px;
+  margin: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.lux-curl-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 10px;
+  position: relative;
+}
+
+.lux-curl-textbox {
+  flex: 1;
+  background-color: #000036;
+  border: 10px solid #b0c4de;
+  padding: 20px;
+  min-width: 300px;
+  position: relative;
+  z-index: 0;
+  min-height: 350px;
+  box-sizing: border-box;
+}
+
+.lux-curl-text {
+  border-style: solid;
+  border-width: 0 1px;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-image: linear-gradient(transparent 0%, #b0c4de 50%, transparent 100%) 1;
+  padding: 15px;
+  font-family: 'Special Elite', serif;
+  font-size: 16px;
+  text-align: justify;
+  color: #778ba5;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.lux-curl-text b {
+  color: #b0c4de;
+}
+
+.lux-curl-imgwrap {
+  min-width: 300px;
+  max-width: 450px;
+  flex: 1;
+  position: relative;
+  flex-grow: 0;
+  margin-left: -5%;
+  z-index: 1;
+}
+
+.lux-curl-img {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  max-width: 100%;
+  display: block;
+}
+
+.lux-curl-credit {
+  text-align: center;
+  font-size: 11px;
+  margin-top: 10px;
+  color: #778ba5;
+  font-family: 'Special Elite', serif;
+}
