@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+.mochi-rott2-wrap {
+  max-width: 850px;
+  margin: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  /* palette tuned to art */
+  --frame: #480607;
+  --panel-top: #121319;
+  --panel-bot: #0b0c12;
+  --ink: #cfd3dc;
+  --muted: #aab0be;
+  --frame: #1d2951;
+  --spine: #480607;
+  --accent: #b22222;
+}
+
+.mochi-rott2-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 10px;
+  position: relative;
+}
+
+/* text panel (left) */
+.mochi-rott2-textbox {
+  flex: 1;
+  background: linear-gradient(180deg, var(--panel-top) 0%, var(--panel-bot) 100%);
+  border: 10px solid var(--frame);
+  padding: 20px;
+  min-width: 300px;
+  min-height: 350px;
+  position: relative;
+  z-index: 0;
+  box-sizing: border-box;
+}
+
+.mochi-rott2-text {
+  border-style: solid;
+  border-width: 0 1px;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-image: linear-gradient(transparent 0%, var(--spine) 50%, transparent 100%) 1;
+  padding: 15px;
+  font-family: 'Special Elite', serif;
+  font-size: 16px;
+  text-align: justify;
+  color: var(--ink);
+  text-shadow: 1px 1px 2px #fff;
+  line-height: 1.6;
+}
+
+.mochi-rott2-text b {
+  color: var(--accent);
+}
+
+/* image block — right, no shadow */
+.mochi-rott2-imgwrap {
+  min-width: 300px;
+  max-width: 450px;
+  flex: 1;
+  position: relative;
+  flex-grow: 0;
+  margin-left: -5%;
+  z-index: 1;
+}
+
+.mochi-rott2-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  box-sizing: border-box;
+  /* no border or shadow */
+}
+
+/* credit */
+.mochi-rott2-credit {
+  text-align: center;
+  font-size: 11px;
+  margin-top: 10px;
+  color: var(--muted);
+  font-family: 'Special Elite', serif;
+}
+
+/* responsive stack — image on top */
+@media (max-width: 700px) {
+  .mochi-rott2-flex {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .mochi-rott2-imgwrap {
+    margin-left: 0;
+    order: -1;
+  }
+  .mochi-rott2-textbox {
+    min-height: 0;
+  }
+}
