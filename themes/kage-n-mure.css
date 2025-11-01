@@ -19,8 +19,13 @@
 .kage-intro i{color:var(--kage-text)}
 
 /* drop cap on the first paragraph inside .intro */
-.kage-intro.intro p:first-of-type::first-letter{
-  float:left; font-size:3.2em; line-height:.9; padding:.03em .12em 0 0; color:var(--kage-accent); font-weight:600
+p:first-letter {
+  float: left;
+  font-size: 2.4em;
+  line-height: 0.9;
+  margin-right: 0.1em;
+  color: #b32d0e; /* subtle ember tone matching #3d0c02 palette */
+  font-weight: 700;
 }
 
 /* rule blocks */
