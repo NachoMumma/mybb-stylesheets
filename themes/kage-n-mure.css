@@ -83,7 +83,7 @@
 }
 .kage-wrap ul li {
   position: relative;
-  padding-left: 2em; /* Space for the torii */
+  padding-left: 2.5em; /* Space for the torii */
   margin-bottom: 0.8em;
 }
 .kage-wrap ul li::before {
