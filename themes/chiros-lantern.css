@@ -22,8 +22,7 @@
   line-height: 1.6;
   font-family: 'Poppins', sans-serif;
   color: #000;
-  background: rgba(179,186,217,0.95);
-  border-radius: 120px 0 0 0;
+  background: rgba(179,186,217,0.25);
 }
 
 .chiros-lantern-inner b {
