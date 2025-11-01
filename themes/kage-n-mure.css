@@ -77,23 +77,27 @@
 }
 
 .kage-wrap ul {
-  list-style-type: none;
-  padding-left: 0;
+  list-style: none; /* Remove default bullets */
+  padding-left: 0.5em; /* Just a smidge of breathing room */
+  margin-left: 0;
 }
-
 .kage-wrap ul li {
   position: relative;
-  padding-left: 2em;
-  margin-bottom: 0.7em;
+  padding-left: 2em; /* Space for the torii */
+  margin-bottom: 0.8em;
 }
-
 .kage-wrap ul li::before {
   content: "⛩";
   position: absolute;
   left: 0;
-  color: #c82909; /* matches your accent */
-  font-size: 1.05em;
+  top: 50%;
+  transform: translateY(-50%); /* The magic: centers vertically */
+  font-size: 1.1em;
+  color: var(--kage-accent, #c23524);
+  font-family: inherit;
   line-height: 1;
+  width: 2em;
+  text-align: center;
 }
 
 </style>
