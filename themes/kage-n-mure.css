@@ -1,95 +1,39 @@
-/*─── Base font & hierarchy ───*/
+/* =====================================================
+   KAGE NO MURE — Complete Style Sheet
+   ===================================================== */
+
+/* --- Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=Mate+SC&display=swap');
+
+/* --- Global font rules for this pack --- */
 #knm-pack,
 #knm-pack .userhtml,
 #knm-pack .userhtml * {
   font-family: "Spectral", Georgia, "Times New Roman", serif !important;
   color: #eaeaea;
-  line-height: 1.6;
 }
 
-/* Headings */
 #knm-pack h1,
 #knm-pack h2,
 #knm-pack .thead,
 #knm-pack .packbanner > * {
   font-family: "Mate SC", "Spectral", Georgia, serif !important;
-  color: #b32d0e;
-  letter-spacing: 0.6px;
-  font-weight: 600;
+  letter-spacing: .5px;
+  color: #c74822;
+  text-transform: none;
 }
 
-/* h2 spacing tweaks */
-#knm-pack h2 {
-  margin-top: 1.2em;
-  margin-bottom: 0.4em;
-  font-size: 1.3em;
-}
-
-/* Paragraph & text rhythm */
-#knm-pack p {
-  margin: 0.5em 0;
-}
-
-/* Links */
+/* --- Link colors --- */
 #knm-pack a {
   color: #c74822;
   text-decoration: none;
 }
 #knm-pack a:hover {
-  color: #e55a32;
+  color: #ee5522;
+  text-decoration: underline;
 }
 
-/* Inline strong & italics */
-#knm-pack b, #knm-pack strong {
-  font-weight: 600;
-  color: #fff;
-}
-#knm-pack i, #knm-pack em {
-  font-style: italic;
-}
-
-/* Lists */
-#knm-pack ul {
-  padding-left: 1.4em;
-  margin: 0.6em 0;
-}
-#knm-pack li {
-  margin: 0.3em 0;
-}
-
-/* Tables (used for rules & resources) */
-#knm-pack table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 1em 0;
-  font-size: 0.95em;
-}
-#knm-pack th, #knm-pack td {
-  border: 1px solid #2b2b2b;
-  padding: 0.5em 0.8em;
-  vertical-align: top;
-}
-#knm-pack th {
-  background-color: #181818;
-  color: #c74822;
-  text-transform: uppercase;
-  font-size: 0.9em;
-}
-#knm-pack tr:nth-child(even) {
-  background-color: #121212;
-}
-
-/* Horizontal divider */
-#knm-pack .kage-hr {
-  width: 80%;
-  height: 1px;
-  background: linear-gradient(to right, transparent, #3d0c02 30%, transparent);
-  margin: 2em auto;
-}
-
-/*─── Typography detail fixes ───*/
-
-/* Disable rogue drop caps */
+/* --- Dropcap removal --- */
 #knm-pack .no-dropcap p::first-letter,
 #knm-pack .no-dropcap p:first-letter {
   float: none !important;
@@ -99,77 +43,69 @@
   text-shadow: none !important;
 }
 
-/* Optional subtle drop cap for aesthetic paragraphs (if re-enabled) */
-#knm-pack .has-dropcap p:first-letter {
-  float: left;
-  font-size: 2.4em;
-  line-height: 0.9;
-  margin-right: 0.15em;
-  color: #b32d0e;
-  font-weight: 700;
+/* --- Body text & spacing --- */
+#knm-pack p {
+  line-height: 1.55;
+  margin-bottom: 0.6rem;
 }
 
-/*─── Headings & layout alignment ───*/
+/* --- Headings --- */
 #knm-pack h1 {
   text-align: center;
-  font-size: 1.8em;
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
+  font-size: 1.1rem;
+  color: #b32d0e;
+  margin: 0 0 1.2rem 0;
+  letter-spacing: 1px;
 }
 #knm-pack h2 {
-  border-bottom: 1px solid rgba(179, 45, 14, 0.3);
-  padding-bottom: 0.2em;
+  color: #b32d0e;
+  margin-top: 1.25rem;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
 }
 
-/*─── Small typography polish ───*/
-#knm-pack .kage-jp {
-  color: #b32d0e;
-  font-weight: 600;
-  letter-spacing: 0.2px;
+/* --- Columns + section spacing --- */
+#knm-pack {
+  margin-bottom: 2.5rem;
+  padding: 0 1rem;
+}
+#knm-pack::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(61, 12, 2, 0) 0%,
+    rgba(61, 12, 2, 0.5) 50%,
+    rgba(61, 12, 2, 0) 100%
+  );
+  margin-top: 1.75rem;
+}
+
+/* --- Center the lede (info box) only --- */
+.packwrap #knm-pack .knm-lede,
+.packwrap #knm-pack .knm-lede * {
+  text-align: center !important;
+}
+.packwrap #knm-pack .knm-lede {
+  max-width: 68ch;
+  margin: 0 auto 2rem;
+}
+
+/* --- Misc --- */
+#knm-pack i {
+  color: #d8d8d8;
+}
+#knm-pack b {
+  color: #fff;
 }
 #knm-pack .kage-rule {
-  margin: 0.8em 0;
+  margin-bottom: 0.75rem;
 }
-
-/*─── Structural rules for summary/details blocks ───*/
-#knm-pack details {
-  background: rgba(16, 17, 19, 0.7);
-  border: 1px solid #2b2b2b;
-  border-radius: 4px;
-  margin: 1em 0;
-  padding: 0.8em;
-}
-#knm-pack summary {
-  color: #b32d0e;
-  font-weight: 600;
-  cursor: pointer;
-}
-#knm-pack summary:hover {
-  color: #e55a32;
-}
-
-/*─── Responsive tweaks ───*/
-@media (max-width: 800px) {
-  #knm-pack {
-    font-size: 0.95em;
-    padding: 0 0.8em;
-  }
-  #knm-pack h1 {
-    font-size: 1.4em;
-  }
-  #knm-pack h2 {
-    font-size: 1.1em;
-  }
-}
-/* INFO (lede) — center only this top block */
-#knm-pack.knm-lede,
-#knm-pack.knm-lede p,
-#knm-pack.knm-lede i,
-#knm-pack.knm-lede b {
-  text-align: center;
-}
-
-#knm-pack.knm-lede {
-  max-width: 62ch;          /* comfortable line length */
-  margin: 0 auto 2rem;      /* centers the block and adds bottom space */
+#knm-pack .kage-hr {
+  width: 60%;
+  margin: 2rem auto;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
 }
