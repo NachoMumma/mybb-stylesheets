@@ -92,3 +92,17 @@ body, #knm-pack, #knm-pack .userhtml, #knm-pack .userhtml * {
   color: #d55a2c;
   text-decoration: underline;
 }
+/* Center the intro block, no matter what the theme says */
+#knm-pack #knm-info {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center !important;
+}
+
+/* Ensure the children inherit the centering (some themes force left on <p>) */
+#knm-pack #knm-info p,
+#knm-pack #knm-info i,
+#knm-pack #knm-info em,
+#knm-pack #knm-info b {
+  text-align: inherit !important;
+}
