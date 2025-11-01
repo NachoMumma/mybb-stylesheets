@@ -23,9 +23,12 @@ body, #knm-pack, #knm-pack .userhtml, #knm-pack .userhtml * {
 
 /* Fix heading sizing */
 #knm-pack h1 {
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 1.5rem;
+  font-size: 2.6rem !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+  margin: 2rem 0 1rem 0 !important;
+  line-height: 1.2 !important;
+  text-transform: uppercase !important;
 }
 
 #knm-pack h2 {
