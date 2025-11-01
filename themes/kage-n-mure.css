@@ -1,37 +1,163 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&family=Marcellus+SC&family=Noto+Serif+JP:wght@500&display=swap');
-
-:root{
-  --kage-text:#e9e6e1;
-  --kage-muted:#b9b3ad;
-  --kage-accent:#c23524;
-  --kage-soft:#2a2a2a;
-  --kage-line:rgba(255,255,255,.08);
+/*─── Base font & hierarchy ───*/
+#knm-pack,
+#knm-pack .userhtml,
+#knm-pack .userhtml * {
+  font-family: "Spectral", Georgia, "Times New Roman", serif !important;
+  color: #eaeaea;
+  line-height: 1.6;
 }
 
-.kage-wrap{color:var(--kage-text); font-family:"Crimson Pro", serif; line-height:1.55; letter-spacing:.2px}
-.kage-wrap a{color:var(--kage-text); text-decoration:underline dotted}
-.kage-wrap h1,.kage-wrap h2{font-family:"Marcellus SC", serif; color:var(--kage-accent); letter-spacing:.06em; margin:24px 0 10px}
-.kage-wrap h1{font-size:28px; text-align:center}
-.kage-wrap h2{font-size:22px}
+/* Headings */
+#knm-pack h1,
+#knm-pack h2,
+#knm-pack .thead,
+#knm-pack .packbanner > * {
+  font-family: "Mate SC", "Spectral", Georgia, serif !important;
+  color: #b32d0e;
+  letter-spacing: 0.6px;
+  font-weight: 600;
+}
 
-/* centered banner/intro */
-.kage-intro{max-width:900px; margin:0 auto 24px; text-align:center; color:var(--kage-muted)}
-.kage-intro i{color:var(--kage-text)}
+/* h2 spacing tweaks */
+#knm-pack h2 {
+  margin-top: 1.2em;
+  margin-bottom: 0.4em;
+  font-size: 1.3em;
+}
 
-/* rule blocks */
-.kage-rule{padding:10px 0; border-bottom:1px solid var(--kage-line)}
-.kage-rule:last-child{border-bottom:0}
+/* Paragraph & text rhythm */
+#knm-pack p {
+  margin: 0.5em 0;
+}
 
-/* soft divider line */
-.kage-hr{height:1px; background:var(--kage-line); margin:16px 0}
+/* Links */
+#knm-pack a {
+  color: #c74822;
+  text-decoration: none;
+}
+#knm-pack a:hover {
+  color: #e55a32;
+}
 
-/* small-caps helper and jp font helper */
-.kage-sc{font-variant:small-caps; letter-spacing:.08em}
-.kage-jp{font-family:"Noto Serif JP","Crimson Pro",serif}
+/* Inline strong & italics */
+#knm-pack b, #knm-pack strong {
+  font-weight: 600;
+  color: #fff;
+}
+#knm-pack i, #knm-pack em {
+  font-style: italic;
+}
 
-/* subtle callout panel if you ever want it */
-.kage-panel{background:rgba(255,255,255,.04); border:1px solid var(--kage-line); border-radius:8px; padding:12px}
+/* Lists */
+#knm-pack ul {
+  padding-left: 1.4em;
+  margin: 0.6em 0;
+}
+#knm-pack li {
+  margin: 0.3em 0;
+}
 
-/* lists inside content */
-.kage-wrap ul{margin:8px 0 8px 18px}
-.kage-wrap b{color:var(--kage-text)}
+/* Tables (used for rules & resources) */
+#knm-pack table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+  font-size: 0.95em;
+}
+#knm-pack th, #knm-pack td {
+  border: 1px solid #2b2b2b;
+  padding: 0.5em 0.8em;
+  vertical-align: top;
+}
+#knm-pack th {
+  background-color: #181818;
+  color: #c74822;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+#knm-pack tr:nth-child(even) {
+  background-color: #121212;
+}
+
+/* Horizontal divider */
+#knm-pack .kage-hr {
+  width: 80%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #3d0c02 30%, transparent);
+  margin: 2em auto;
+}
+
+/*─── Typography detail fixes ───*/
+
+/* Disable rogue drop caps */
+#knm-pack .no-dropcap p::first-letter,
+#knm-pack .no-dropcap p:first-letter {
+  float: none !important;
+  margin: 0 !important;
+  font-size: inherit !important;
+  color: inherit !important;
+  text-shadow: none !important;
+}
+
+/* Optional subtle drop cap for aesthetic paragraphs (if re-enabled) */
+#knm-pack .has-dropcap p:first-letter {
+  float: left;
+  font-size: 2.4em;
+  line-height: 0.9;
+  margin-right: 0.15em;
+  color: #b32d0e;
+  font-weight: 700;
+}
+
+/*─── Headings & layout alignment ───*/
+#knm-pack h1 {
+  text-align: center;
+  font-size: 1.8em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+#knm-pack h2 {
+  border-bottom: 1px solid rgba(179, 45, 14, 0.3);
+  padding-bottom: 0.2em;
+}
+
+/*─── Small typography polish ───*/
+#knm-pack .kage-jp {
+  color: #b32d0e;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+#knm-pack .kage-rule {
+  margin: 0.8em 0;
+}
+
+/*─── Structural rules for summary/details blocks ───*/
+#knm-pack details {
+  background: rgba(16, 17, 19, 0.7);
+  border: 1px solid #2b2b2b;
+  border-radius: 4px;
+  margin: 1em 0;
+  padding: 0.8em;
+}
+#knm-pack summary {
+  color: #b32d0e;
+  font-weight: 600;
+  cursor: pointer;
+}
+#knm-pack summary:hover {
+  color: #e55a32;
+}
+
+/*─── Responsive tweaks ───*/
+@media (max-width: 800px) {
+  #knm-pack {
+    font-size: 0.95em;
+    padding: 0 0.8em;
+  }
+  #knm-pack h1 {
+    font-size: 1.4em;
+  }
+  #knm-pack h2 {
+    font-size: 1.1em;
+  }
+}
