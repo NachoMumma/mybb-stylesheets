@@ -98,6 +98,7 @@
   line-height: 1;
   width: 2em;
   text-align: center;
+  padding-right: 5px; /* Or try 3px */
 }
 
 </style>
