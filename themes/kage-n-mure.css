@@ -1,73 +1,78 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&family=Marcellus+SC&family=Noto+Serif+JP:wght@500&display=swap');
-:root {
-  --kage-text: #e9e6e1;
-  --kage-muted: #b9b3ad;
-  --kage-accent: #c23524;
-  --kage-line: rgba(255,255,255,.08);
+
+.kage-wrap, .kage-wrap * {
+  font-family: "Crimson Pro", serif !important;
+  color: #e9e6e1 !important;
+  background: none !important;
+  text-transform: none !important;
+  letter-spacing: 0.2px !important;
 }
-.kage-wrap {
-  color: var(--kage-text);
-  font-family: "Crimson Pro", serif;
-  line-height: 1.55;
-  letter-spacing: .2px;
+
+.kage-title {
+  font-family: "Marcellus SC", serif !important;
+  color: #c23524 !important;
+  font-size: 2.1em !important;
+  text-align: center !important;
+  font-weight: 600 !important;
+  margin: 24px 0 10px 0 !important;
+  letter-spacing: .06em !important;
+  text-transform: none !important;
 }
+
 .kage-wrap h1, .kage-wrap h2 {
-  font-family: "Marcellus SC", serif;
-  color: var(--kage-accent);
-  letter-spacing: .06em;
-  margin: 24px 0 10px;
+  font-family: "Marcellus SC", serif !important;
+  color: #c23524 !important;
+  text-transform: none !important;
+  margin: 24px 0 10px 0 !important;
+  font-weight: 600 !important;
+  letter-spacing: .06em !important;
+  background: none !important;
 }
+
 .kage-wrap h1 {
-  font-size: 28px;
-  text-align: center;
+  font-size: 2.1em !important;
+  text-align: center !important;
 }
+
 .kage-wrap h2 {
-  font-size: 22px;
+  font-size: 1.5em !important;
 }
+
 .kage-intro {
   max-width: 900px;
-  margin: 0 auto 24px;
-  text-align: center;
-  color: var(--kage-muted);
+  margin: 0 auto 24px auto;
+  text-align: center !important;
+  color: #b9b3ad !important;
 }
-.kage-intro i {
-  color: var(--kage-text);
+
+.kage-intro i, .kage-intro em {
+  color: #e9e6e1 !important;
+  font-style: italic !important;
 }
-/* REMOVE DROP CAP */
-.kage-intro.intro p:first-of-type::first-letter {
-  float: none !important;
-  font-size: inherit !important;
-  color: inherit !important;
-  padding: 0 !important;
-  font-weight: inherit !important;
-}
-.kage-rule {
-  padding: 10px 0;
-  border-bottom: 1px solid var(--kage-line);
-}
-.kage-rule:last-child {
-  border-bottom: 0;
-}
+
 .kage-hr {
   height: 1px;
-  background: var(--kage-line);
+  background: rgba(255,255,255,.08);
   margin: 16px 0;
+  border: none;
 }
-.kage-sc {
-  font-variant: small-caps;
-  letter-spacing: .08em;
+
+.kage-wrap b, .kage-wrap strong {
+  font-weight: 700 !important;
 }
-.kage-jp {
-  font-family: "Noto Serif JP", "Crimson Pro", serif;
+
+.kage-wrap p {
+  text-align: inherit !important;
+  margin: 0.5em 0 !important;
+  background: none !important;
 }
-.kage-panel {
-  background: rgba(255,255,255,.04);
-  border: 1px solid var(--kage-line);
-  border-radius: 8px;
-  padding: 12px;
-}
-.kage-wrap ul {
-  margin: 8px 0 8px 18px;
+
+.kage-wrap .whisper {
+  font-style: italic !important;
+  opacity: 0.8;
+  margin-top: 1rem;
+  font-size: 0.95rem !important;
+  color: #d3d3d3 !important;
 }
 </style>
