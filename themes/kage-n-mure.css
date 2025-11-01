@@ -1,110 +1,73 @@
-/* -----------------------------------
-   KAGE NO MURE — CONSOLIDATED CSS
------------------------------------ */
-
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=Mate+SC&display=swap');
-
-/* ==== GLOBAL PAGE SETTINGS ==== */
-body, #knm-pack, #knm-pack .userhtml, #knm-pack .userhtml * {
-  font-family: "Spectral", Georgia, "Times New Roman", serif;
-  color: #eaeaea;
-  background-color: #101113;
-  line-height: 1.6;
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&family=Marcellus+SC&family=Noto+Serif+JP:wght@500&display=swap');
+:root {
+  --kage-text: #e9e6e1;
+  --kage-muted: #b9b3ad;
+  --kage-accent: #c23524;
+  --kage-line: rgba(255,255,255,.08);
 }
-
-/* ==== HEADINGS ==== */
-#knm-pack h1, #knm-pack h2, #knm-pack h3,
-#knm-pack .kage-title, #knm-pack .section-title {
-  font-family: "Mate SC", "Spectral", Georgia, serif;
-  color: #c82909;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-weight: 600;
+.kage-wrap {
+  color: var(--kage-text);
+  font-family: "Crimson Pro", serif;
+  line-height: 1.55;
+  letter-spacing: .2px;
 }
-
-/* Main Heading Style */
-#knm-pack h1,
-#knm-pack .kage-title {
-  font-size: 2.6rem;
+.kage-wrap h1, .kage-wrap h2 {
+  font-family: "Marcellus SC", serif;
+  color: var(--kage-accent);
+  letter-spacing: .06em;
+  margin: 24px 0 10px;
+}
+.kage-wrap h1 {
+  font-size: 28px;
   text-align: center;
-  margin: 2rem 0 1.5rem 0;
-  line-height: 1.2;
 }
-
-/* Section Heading Style */
-#knm-pack h2,
-#knm-pack .section-title {
-  font-size: 1.3rem;
-  margin: 1.5rem 0 0.5rem 0;
+.kage-wrap h2 {
+  font-size: 22px;
 }
-
-/* ==== INFO BOX (Centered Block) ==== */
-#knm-pack #knm-info {
+.kage-intro {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 0 auto 24px;
   text-align: center;
-  padding: 1.5rem 0;
+  color: var(--kage-muted);
 }
-
-/* Ensure all text inside info box is centered */
-#knm-pack #knm-info p,
-#knm-pack #knm-info i,
-#knm-pack #knm-info em,
-#knm-pack #knm-info b {
-  text-align: inherit;
+.kage-intro i {
+  color: var(--kage-text);
 }
-
-/* Info box paragraphs for spacing */
-#knm-pack #knm-info p {
-  margin: 0.4rem 0;
-  font-size: 1rem;
+/* REMOVE DROP CAP */
+.kage-intro.intro p:first-of-type::first-letter {
+  float: none !important;
+  font-size: inherit !important;
+  color: inherit !important;
+  padding: 0 !important;
+  font-weight: inherit !important;
 }
-
-/* Whisper line at bottom */
-#knm-pack #knm-info .whisper {
-  font-style: italic;
-  opacity: 0.8;
-  margin-top: 1rem;
-  font-size: 0.95rem;
-  color: #d3d3d3;
+.kage-rule {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--kage-line);
 }
-
-/* Decorative Divider (reusable) */
-#knm-pack .kage-hr {
-  border-top: 1px solid #c82909;
-  width: 60%;
-  margin: 2rem auto 0 auto;
-  opacity: 0.4;
+.kage-rule:last-child {
+  border-bottom: 0;
 }
-
-/* ==== COLUMN LAYOUT ==== */
-#knm-pack .pack-columns {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 2rem;
+.kage-hr {
+  height: 1px;
+  background: var(--kage-line);
+  margin: 16px 0;
 }
-
-#knm-pack .pack-column {
-  flex: 1 1 45%;
-  min-width: 300px;
+.kage-sc {
+  font-variant: small-caps;
+  letter-spacing: .08em;
 }
-
-/* ==== LINKS ==== */
-#knm-pack a {
-  color: #c74822;
-  text-decoration: none;
+.kage-jp {
+  font-family: "Noto Serif JP", "Crimson Pro", serif;
 }
-#knm-pack a:hover {
-  color: #d55a2c;
-  text-decoration: underline;
+.kage-panel {
+  background: rgba(255,255,255,.04);
+  border: 1px solid var(--kage-line);
+  border-radius: 8px;
+  padding: 12px;
 }
-
-/* ==== DROP CAP NUKER ==== */
-#knm-pack p::first-letter {
-  float: none;
-  font-size: inherit;
-  margin: 0;
-  color: inherit;
+.kage-wrap ul {
+  margin: 8px 0 8px 18px;
 }
+</style>
