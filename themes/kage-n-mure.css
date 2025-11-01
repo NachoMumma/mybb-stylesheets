@@ -161,3 +161,15 @@
     font-size: 1.1em;
   }
 }
+/* INFO (lede) — center only this top block */
+#knm-pack.knm-lede,
+#knm-pack.knm-lede p,
+#knm-pack.knm-lede i,
+#knm-pack.knm-lede b {
+  text-align: center;
+}
+
+#knm-pack.knm-lede {
+  max-width: 62ch;          /* comfortable line length */
+  margin: 0 auto 2rem;      /* centers the block and adds bottom space */
+}
