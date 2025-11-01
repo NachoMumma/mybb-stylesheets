@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&family=Marcellus+SC&family=Noto+Serif+JP:wght@500&display=swap');
+
+:root{
+  --kage-text:#e9e6e1;
+  --kage-muted:#b9b3ad;
+  --kage-accent:#c23524;
+  --kage-soft:#2a2a2a;
+  --kage-line:rgba(255,255,255,.08);
+}
+
+.kage-wrap{color:var(--kage-text); font-family:"Crimson Pro", serif; line-height:1.55; letter-spacing:.2px}
+.kage-wrap a{color:var(--kage-text); text-decoration:underline dotted}
+.kage-wrap h1,.kage-wrap h2{font-family:"Marcellus SC", serif; color:var(--kage-accent); letter-spacing:.06em; margin:24px 0 10px}
+.kage-wrap h1{font-size:28px; text-align:center}
+.kage-wrap h2{font-size:22px}
+
+/* centered banner/intro */
+.kage-intro{max-width:900px; margin:0 auto 24px; text-align:center; color:var(--kage-muted)}
+.kage-intro i{color:var(--kage-text)}
+
+/* drop cap on the first paragraph inside .intro */
+.kage-intro.intro p:first-of-type::first-letter{
+  float:left; font-size:3.2em; line-height:.9; padding:.03em .12em 0 0; color:var(--kage-accent); font-weight:600
+}
+
+/* rule blocks */
+.kage-rule{padding:10px 0; border-bottom:1px solid var(--kage-line)}
+.kage-rule:last-child{border-bottom:0}
+
+/* soft divider line */
+.kage-hr{height:1px; background:var(--kage-line); margin:16px 0}
+
+/* small-caps helper and jp font helper */
+.kage-sc{font-variant:small-caps; letter-spacing:.08em}
+.kage-jp{font-family:"Noto Serif JP","Crimson Pro",serif}
+
+/* subtle callout panel if you ever want it */
+.kage-panel{background:rgba(255,255,255,.04); border:1px solid var(--kage-line); border-radius:8px; padding:12px}
+
+/* lists inside content */
+.kage-wrap ul{margin:8px 0 8px 18px}
+.kage-wrap b{color:var(--kage-text)}
