@@ -75,4 +75,25 @@
   font-size: 0.95rem !important;
   color: #d3d3d3 !important;
 }
+
+.kage-wrap ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.kage-wrap ul li {
+  position: relative;
+  padding-left: 2em;
+  margin-bottom: 0.7em;
+}
+
+.kage-wrap ul li::before {
+  content: "⛩";
+  position: absolute;
+  left: 0;
+  color: #c82909; /* matches your accent */
+  font-size: 1.05em;
+  line-height: 1;
+}
+
 </style>
