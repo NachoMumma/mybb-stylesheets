@@ -2,9 +2,9 @@
 
 .chiros-lantern {
   width: 600px;
-  padding: 300px 300px 0 0; /* (top, right, bottom, left) */
+  padding: 300px 0 0 0; /* (top, right, bottom, left) */
   border: 5px solid #141936;
-  border-radius: 300px 0 0 0;
+  border-radius: 300px 300px 0 0;
   background: url('https://f2.toyhou.se/file/f2-toyhou-se/images/109597043_Lu6AqRPFqkdNizT.png') no-repeat center top;
   background-size: 600px auto;
   background-color: #b3bad9;
