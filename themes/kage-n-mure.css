@@ -1,75 +1,84 @@
 /* -----------------------------------
-   KAGE NO MURE — COMPLETE STYLESHEET
+   KAGE NO MURE — CONSOLIDATED CSS
 ----------------------------------- */
 
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=Mate+SC&display=swap');
 
-/* GENERAL PAGE SETTINGS */
+/* ==== GLOBAL PAGE SETTINGS ==== */
 body, #knm-pack, #knm-pack .userhtml, #knm-pack .userhtml * {
-  font-family: "Spectral", Georgia, "Times New Roman", serif !important;
+  font-family: "Spectral", Georgia, "Times New Roman", serif;
   color: #eaeaea;
   background-color: #101113;
   line-height: 1.6;
 }
 
-/* HEADINGS */
-#knm-pack h1, #knm-pack h2, #knm-pack h3 {
-  font-family: "Mate SC", "Spectral", Georgia, serif !important;
+/* ==== HEADINGS ==== */
+#knm-pack h1, #knm-pack h2, #knm-pack h3,
+#knm-pack .kage-title, #knm-pack .section-title {
+  font-family: "Mate SC", "Spectral", Georgia, serif;
   color: #c82909;
   letter-spacing: 1px;
   text-transform: uppercase;
+  font-weight: 600;
 }
 
-/* Fix heading sizing */
-#knm-pack h1 {
-  font-size: 2.6rem !important;
-  font-weight: 600 !important;
-  text-align: center !important;
-  margin: 2rem 0 1rem 0 !important;
-  line-height: 1.2 !important;
-  text-transform: uppercase !important;
-}
-
-#knm-pack h2 {
-  font-size: 1.3rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-/* Center the INFO section */
-#knm-pack .info-box {
+/* Main Heading Style */
+#knm-pack h1,
+#knm-pack .kage-title {
+  font-size: 2.6rem;
   text-align: center;
-  max-width: 800px;
+  margin: 2rem 0 1.5rem 0;
+  line-height: 1.2;
+}
+
+/* Section Heading Style */
+#knm-pack h2,
+#knm-pack .section-title {
+  font-size: 1.3rem;
+  margin: 1.5rem 0 0.5rem 0;
+}
+
+/* ==== INFO BOX (Centered Block) ==== */
+#knm-pack #knm-info {
+  max-width: 900px;
   margin: 0 auto;
+  text-align: center;
+  padding: 1.5rem 0;
 }
 
-/* Dropcap and rogue letter nuke */
-#knm-pack p::first-letter {
-  float: none !important;
-  font-size: inherit !important;
-  margin: 0 !important;
-  color: inherit !important;
+/* Ensure all text inside info box is centered */
+#knm-pack #knm-info p,
+#knm-pack #knm-info i,
+#knm-pack #knm-info em,
+#knm-pack #knm-info b {
+  text-align: inherit;
 }
 
-/* Decorative Divider */
+/* Info box paragraphs for spacing */
+#knm-pack #knm-info p {
+  margin: 0.4rem 0;
+  font-size: 1rem;
+}
+
+/* Whisper line at bottom */
+#knm-pack #knm-info .whisper {
+  font-style: italic;
+  opacity: 0.8;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #d3d3d3;
+}
+
+/* Decorative Divider (reusable) */
 #knm-pack .kage-hr {
   border-top: 1px solid #c82909;
   width: 60%;
-  margin: 1.5rem auto;
-  opacity: 0.5;
+  margin: 2rem auto 0 auto;
+  opacity: 0.4;
 }
 
-/* Section Titles */
-#knm-pack .section-title {
-  font-family: "Mate SC", serif;
-  color: #c82909;
-  font-size: 1.5rem;
-  text-transform: none;
-  margin-bottom: 0.5rem;
-}
-
-/* Columns - restore layout */
+/* ==== COLUMN LAYOUT ==== */
 #knm-pack .pack-columns {
   display: flex;
   flex-wrap: wrap;
@@ -82,27 +91,20 @@ body, #knm-pack, #knm-pack .userhtml, #knm-pack .userhtml * {
   min-width: 300px;
 }
 
-/* Link Colors */
+/* ==== LINKS ==== */
 #knm-pack a {
   color: #c74822;
   text-decoration: none;
 }
-
 #knm-pack a:hover {
   color: #d55a2c;
   text-decoration: underline;
 }
-/* Center the intro block, no matter what the theme says */
-#knm-pack #knm-info {
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center !important;
-}
 
-/* Ensure the children inherit the centering (some themes force left on <p>) */
-#knm-pack #knm-info p,
-#knm-pack #knm-info i,
-#knm-pack #knm-info em,
-#knm-pack #knm-info b {
-  text-align: inherit !important;
+/* ==== DROP CAP NUKER ==== */
+#knm-pack p::first-letter {
+  float: none;
+  font-size: inherit;
+  margin: 0;
+  color: inherit;
 }
