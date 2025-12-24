@@ -10,10 +10,10 @@
   padding: 24px;
 
   font-family: 'Syne Mono', monospace;
-  color: rgba(255,255,255,0.92);
+  color: rgba(255,255,255,0.95);
 
-  background: rgba(0,0,0,0.75);
-  border: 1px solid rgba(255,255,255,0.12);
+  background: #080808;
+  border: 1px solid rgba(255,255,255,0.10);
   border-radius: 12px;
 }
 
@@ -27,7 +27,7 @@
   margin: 22px 0;
   padding: 18px 20px;
 
-  background: rgba(255,255,255,0.10); /* 10% white */
+  background: rgba(255,255,255,0.12);
   border-left: 6px solid var(--accent);
   border-radius: 10px;
 
