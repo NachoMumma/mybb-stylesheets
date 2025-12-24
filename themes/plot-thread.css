@@ -34,6 +34,8 @@
 
 /* name header */
 .nacho-text h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
   margin: 0 0 10px 0;
   color: var(--accent);
   letter-spacing: 0.08em;
