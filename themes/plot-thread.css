@@ -1,0 +1,52 @@
+/* container for the whole post */
+.nacho-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* individual character block */
+.nacho-char {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 30px 0;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.25);
+  border-left: 6px solid var(--accent);
+}
+
+/* image styling */
+.nacho-char img {
+  max-width: 250px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+/* text block */
+.nacho-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* name header */
+.nacho-text h3 {
+  margin: 0 0 10px 0;
+  color: var(--accent);
+  letter-spacing: 0.08em;
+}
+
+/* metadata line */
+.nacho-meta {
+  font-size: 0.9em;
+  opacity: 0.85;
+  margin-bottom: 10px;
+}
+
+/* --- COLOR VARIABLES --- */
+
+.mochi { --accent: #d41414; }     /* bright red */
+.signe { --accent: #7a1f1a; }     /* dried blood */
+.kenway { --accent: #d4af37; }    /* gold */
+.corsair { --accent: #7a4bb3; }   /* violet */
+.sophie { --accent: #4b1f6f; }    /* deep purple */
