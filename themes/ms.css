@@ -121,6 +121,10 @@
     border-radius: 0 0 8px 8px;
     padding: 18px 8px;
   }
+  .ms-panel-inner::before,
+  .ms-panel-inner::after {
+    display: none !important;
+  }
   .ms-panel-scroll {
     max-height: none !important;
     overflow: visible !important;
