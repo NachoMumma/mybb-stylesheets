@@ -125,3 +125,6 @@
     max-height: none !important;
     overflow: visible !important;
 }
+   .ms-panel-scroll::-webkit-scrollbar,
+    display: none !important;
+  }
