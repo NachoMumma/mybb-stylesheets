@@ -13,30 +13,34 @@
   height: auto;
 }
 
-/* Big overlay occupying the left-side region */
+/* Overlay container pinned to image height */
 .kbr-panel {
   position: absolute;
   left: 4%;
-  top: 20px;
-  bottom: 20px;
+  top: 25px;
+  bottom: 25px;
   width: 46%;
   box-sizing: border-box;
 
-  /* Allows the inner panel to sit nicely within the fixed vertical space */
   display: flex;
-  align-items: center;
+  overflow: hidden;
 }
 
-/* The glass backing */
+/* Glass panel that centers when short */
 .kbr-panel-inner {
   width: 100%;
-  max-height: 100%;
-  background-color: rgba(255, 255, 255, 0.15);
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.25);
   padding: 1rem;
   box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical centering when short */
+  overflow: hidden;
 }
 
-/* Scroll area: grows until it hits the panel height, then scrolls */
+/* Scroll region */
 .kbr-panel-scroll {
   max-height: 100%;
   overflow: auto;
@@ -44,12 +48,32 @@
   font-family: 'Noto Serif', serif;
   font-size: 0.95rem;
   line-height: 1.55;
-
   overflow-wrap: break-word;
 }
 
-/* Scoped gold bold */
+/* Gold bold text */
 .kbr-panel-scroll b {
   color: #c9a24d;
   font-weight: 700;
+}
+
+/* Subtle scrollbar */
+.kbr-panel-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.kbr-panel-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+.kbr-panel-scroll::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.kbr-panel-scroll p {
+  margin: 0 0 0.9em 0;
+}
+
+.kbr-panel-scroll p:last-child {
+  margin-bottom: 0;
 }
