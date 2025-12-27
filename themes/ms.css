@@ -106,27 +106,19 @@
   background: transparent;
 }
 
-/* Responsive - on mobile stack, image above text, shrink art */
+
+/* Mobile override: stack, resize, round */
 @media (max-width: 700px) {
   .ms-container {
     flex-direction: column;
-    max-width: 96vw;
-    min-height: unset;
+    max-width: 99vw;
   }
   .ms-art {
     width: 100%;
-    min-height: 260px;
-    max-height: 320px;
-    border-radius: 10px 10px 0 0;
-    margin-bottom: 0;
+    border-radius: 8px 8px 0 0;
   }
   .ms-panel-inner {
-    border-radius: 0 0 10px 10px;
-    padding: 20px 10px;
-  }
-  .ms-panel-scroll {
-    max-height: 220px;
-    font-size: 13px;
-    padding-right: 0;
+    border-radius: 0 0 8px 8px;
+    padding: 18px 8px;
   }
 }
