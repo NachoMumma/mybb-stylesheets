@@ -121,10 +121,11 @@
     border-radius: 0 0 8px 8px;
     padding: 18px 8px;
   }
-  .ms-panel-scroll, {
+  .ms-panel-scroll {
     max-height: none !important;
     overflow: visible !important;
-}
-   .ms-panel-scroll::-webkit-scrollbar,
+  }
+  .ms-panel-scroll::-webkit-scrollbar {
     display: none !important;
   }
+}
