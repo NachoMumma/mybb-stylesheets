@@ -5,63 +5,75 @@
   margin: 40px auto;
   display: flex;
   align-items: stretch;
-  gap: 0px;
+  gap: 0;
   box-sizing: border-box;
 }
 
-/* Art anchors height! */
+/* Art anchors the total height */
 .lux-art {
   flex: 0 0 auto;
   width: 340px;
-  height: 560px; /* <<- CHOOSE your art's exact height! */
+  height: 560px;  /* <- Set to your art! */
   background: url('https://f2.toyhou.se/file/f2-toyhou-se/images/112370375_hrLo5k3BZde4GxC.png') center center/contain no-repeat;
   border-radius: 0 12px 12px 0;
   min-width: 0;
   min-height: 0;
+  box-shadow: none;
 }
 
-/* Text column matches art height, no extra! */
 .lux-panel {
   flex: 1 1 0;
   display: flex;
-  align-items: center;  /* Center text box vertically */
+  align-items: center;
   min-width: 0;
-  height: 560px;        /* Match image height! */
+  height: 560px;   /* <- Match art! */
 }
 
+/* The main text box, rounded and gradient */
 .lux-panel-inner {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 83.5%;          
+  height: 83.5%;    /* will center in parent, adjust as needed (try 85% for more) */
   min-width: 0;
   background: linear-gradient(135deg, #013220 0%, #228b22 60%, #507d2a 100%);
   border-radius: 12px 0 0 12px;
-  box-shadow: 0 2px 24px 0 rgba(0,0,0,0.13);
+  box-shadow: 0 2px 24px 0 rgba(0,0,0,0.14);
   overflow: hidden;
-  padding: 0;
-  align-self: center;   /* Centers in parent flex (.lux-panel) */
+  align-self: center;
 }
 
-/* Black overlay for contrast */
-.lux-panel-inner::after {
-  content: "";
+/* Overlay as a child, so it obeys padding easily */
+.lux-panel-overlay {
   position: absolute;
-  inset: 0;
+  top: 16px;   /* padding from top */
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  background: rgba(0,0,0,0.42);
   z-index: 1;
-  background: rgba(0,0,0,0.40);
-  pointer-events: none;
-  border-radius: 12px 0 0 12px;
-  z-index: 1;
+  border-radius: 10px;
 }
 
-/* This is the real scroll area, with padding INSIDE */
-.lux-panel-scroll {
+/* Padded wrapper: this is where your overlay will 'reveal' padding! */
+.lux-panel-padding {
   position: relative;
   z-index: 2;
+  height: 100%;
+  width: 100%;
+  padding: 35px 35px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 12px 0 0 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Scrollable text area, no extra padding here! */
+.lux-panel-scroll {
   width: 100%;
   height: 100%;
-  max-height: 100%;
   overflow-y: auto;
   font-family: 'Libre Baskerville', serif;
   font-size: 15px;
@@ -69,44 +81,39 @@
   line-height: 1.7;
   letter-spacing: 0.01em;
   text-shadow: 0 2px 6px #000a;
+  border-radius: 12px 0 0 12px;
   box-sizing: border-box;
-  padding: 26px 26px 26px 30px;
-  border-radius: 12px 0 0 12px; /* for internal scroll style */
-  min-width: 0;
 }
 
-/* Prettier custom scrollbar for most browsers */
+/* Custom scrollbar (optional) */
 .lux-panel-scroll::-webkit-scrollbar {
   width: 8px;
 }
 .lux-panel-scroll::-webkit-scrollbar-thumb {
-  background: rgba(0,0,0,0.21);
+  background: rgba(0,0,0,0.19);
   border-radius: 8px;
 }
 .lux-panel-scroll::-webkit-scrollbar-track {
   background: transparent;
 }
 
-/* Paragraph spacing */
+/* Paragraph and bold styling */
 .lux-panel-scroll p {
   margin: 0 0 1.1em 0;
 }
-.lux-panel-scroll p:last-child {
-  margin-bottom: 0;
-}
+.lux-panel-scroll p:last-child { margin-bottom: 0; }
 
-/* Speech (or just use b for bold) */
 .lux-panel-scroll b {
   color: #c0ffb0;
   text-shadow: 1px 1px 3px #000, 0 0 2px #000;
   font-weight: bold;
 }
 
-/* Responsive for mobile: stack, image first, strip excess */
+/* Responsive: stack, strip scroll/padding */
 @media (max-width: 700px) {
   .lux-container {
     flex-direction: column-reverse;
-    max-width: 97vw;
+    max-width: 98vw;
     align-items: stretch;
   }
   .lux-art {
@@ -116,20 +123,22 @@
     border-radius: 0 0 12px 12px;
     margin-top: 0;
   }
-  .lux-panel-inner {
-    border-radius: 12px 12px 0 0;
+  .lux-panel {
+    height: auto;
+    min-height: 0;
+    align-items: flex-end;
+  }
+  .lux-panel-inner, .lux-panel-padding, .lux-panel-scroll {
+    border-radius: 12px 12px 0 0 !important;
     height: auto;
     min-height: 0;
   }
-  .lux-panel-scroll {
-    border-radius: 12px 12px 0 0;
-    max-height: none;
-    height: auto;
-    font-size: 14px;
+  .lux-panel-padding {
     padding: 16px 8px;
-    overflow: visible !important;
   }
-  .lux-panel-inner::after {
-    border-radius: 12px 12px 0 0;
+  .lux-panel-scroll {
+    max-height: none !important;
+    font-size: 14px;
+    overflow: visible !important;
   }
 }
