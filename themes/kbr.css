@@ -1,26 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap');
 
+/* === Main card === */
 .kbr-card {
   max-width: 900px;
   margin: 0 auto;
   position: relative;
   box-sizing: border-box;
 
-  /* Background art */
-  background: url('https://f2.toyhou.se/file/f2-toyhou-se/images/112371109_irLmBUSYkG7nrtT.png') no-repeat center center;
+  background: url('https://f2.toyhou.se/file/f2-toyhou-se/images/112371109_irLmBUSYkG7nrtT.png')
+    no-repeat center center;
   background-size: cover;
 
-  /* Modern sizing: keeps the image proportion without needing extra markup */
-  aspect-ratio: 3 / 2; /* tweak if you want it taller/shorter */
+  aspect-ratio: 3 / 2;
 }
 
-/* Fallback for older forum browsers that ignore aspect-ratio */
+/* Fallback for browsers without aspect-ratio */
 .kbr-card::before {
   content: "";
   display: block;
-  padding-top: 66.6667%; /* matches 3:2 ratio */
+  padding-top: 66.6667%;
 }
 
+/* === Overlay lane === */
 .kbr-panel {
   position: absolute;
   left: 4%;
@@ -29,38 +30,36 @@
   width: 46%;
   box-sizing: border-box;
 
-  /* This creates a definite vertical "lane" to scroll within */
   display: flex;
-  align-items: center;   /* vertical center when short */
+  align-items: center; /* vertically center when short */
   overflow: hidden;
 }
 
+/* === Glass panel === */
 .kbr-panel-inner {
   width: 100%;
-  box-sizing: border-box;
-  padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.25);
-
-  /* Key: inner can be shorter than the lane, but never taller */
   max-height: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
 
-  /* Needed so the scroll child can size correctly */
+  background-color: rgba(255, 255, 255, 0.35);
+
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
 
+/* === Scrollable text === */
 .kbr-scroll {
-  /* Key: this becomes the scroll container once inner hits max-height */
-  overflow: auto;
   max-height: 100%;
-
-  /* Flexbox scrolling gotcha: prevents overflow from escaping */
+  overflow: auto;
   min-height: 0;
 
   font-family: 'Noto Serif', serif;
   font-size: 0.95rem;
   line-height: 1.55;
+  color: #000;
+
   overflow-wrap: break-word;
 }
 
@@ -79,6 +78,18 @@
   font-weight: 700;
 }
 
+/* Links forced readable on dark themes */
+.kbr-scroll a,
+.kbr-scroll a:visited {
+  color: #000;
+}
+
+.kbr-scroll a:hover,
+.kbr-scroll a:focus {
+  color: #000;
+  text-decoration: underline;
+}
+
 /* Subtle scrollbar */
 .kbr-scroll::-webkit-scrollbar {
   width: 8px;
@@ -91,4 +102,11 @@
 
 .kbr-scroll::-webkit-scrollbar-track {
   background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* === Mobile: hide component entirely === */
+@media (max-width: 720px) {
+  .kbr-card {
+    display: none;
+  }
 }
