@@ -1,147 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
 
-/* Outer wrapper */
-.ms-wrap {
+.ms-container {
   max-width: 900px;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
-/* Layout container */
-.ms-frame {
+  margin: 40px auto;
   display: flex;
-  width: 100%;
+  align-items: stretch; /* Keeps things even! */
+  gap: 3px;
   box-sizing: border-box;
-  align-items: stretch; /* ensures both columns match height */
-  gap: 3px;            /* breathing room between art and box */
-}
-
-/* Image side (unstyled) */
-.ms-left {
-  flex: 0 0 40%;
-  box-sizing: border-box;
+  min-height: 420px; /* matches art height below */
+  position: relative;
 }
 
 .ms-art {
-  display: block;
-  width: 100%;
-  height: auto;
+  flex: 0 0 320px;
+  background: url('https://f2.toyhou.se/file/f2-toyhou-se/images/112370296_wWjMgmxVZoTjVFC.png') no-repeat center center;
+  background-size: cover;
+  border-radius: 8px 0 0 8px;
+  min-height: 420px;
+  max-height: 700px;
+  width: 320px;
 }
 
-/* Text column stretches to image height */
-.ms-right {
-  flex: 1;
+.ms-panel {
+  flex: 1 1 0%;
   display: flex;
-  box-sizing: border-box;
-  align-items: center; /* centers the shorter box vertically in the image column */
+  align-items: stretch;
+  background: none;
+  min-width: 0;
 }
 
-/* === TEXT BOX === */
-.ms-text {
-  width: 100%;
-  height: 95%;
-  box-sizing: border-box;
-  padding: 22px;
-
-  /* Background layers stay exactly as you have them */
-  background-image:
-  /* Color wash: purple → blue → navy */
-  linear-gradient(
-    135deg,
-    rgba(96, 62, 160, 0.55),
-    rgba(48, 92, 160, 0.45),
-    rgba(8, 14, 32, 0.92)
-  ),
-
-  /* Darkening gradient for legibility */
-  linear-gradient(
-    180deg,
-    rgba(5, 9, 20, 0.85),
-    rgba(11, 18, 34, 0.92)
-  ),
-
-  /* Star layers */
-  radial-gradient(circle at 15% 20%, rgba(255,255,255,0.12) 1px, transparent 2px),
-  radial-gradient(circle at 70% 35%, rgba(255,255,255,0.10) 1px, transparent 2px),
-  radial-gradient(circle at 40% 80%, rgba(255,255,255,0.08) 1px, transparent 2px),
-
-  /* Motion layer */
-  url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmhmbndnanF3ank4dHBxd29hbWczNzRnbnRxOXJuMzU2dTFreTdoMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pWhWtKdqwOAco/giphy.gif');
-
-  background-size:
-  100% 100%,
-  100% 100%,
-  180px 180px,
-  220px 220px,
-  260px 260px,
-  cover;
-
-  background-repeat:
-    no-repeat,
-    repeat,
-    repeat,
-    repeat,
-    no-repeat;
-
-  background-position: center;
-
-  border-radius: 12px;
-  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.42);
-
-  font-family: 'Libre Baskerville', serif;
-  font-size: 14px;
-  line-height: 1.7;
-  color: #f5f7ff;
-
-  /* ✨ The important part */
+.ms-panel-inner {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* vertical center when short */
-  overflow: auto;          /* scroll when long */
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  background: none; /* Remove old bg here */
+  border-radius: 0 16px 16px 0;
+  box-shadow: 0 2px 24px 0 rgba(30,40,80,0.4);
+  overflow: hidden;
+  padding: 32px 36px;
+  box-sizing: border-box;
+  z-index: 1;
 }
 
-/* Paragraph spacing */
-.ms-text p {
-  margin: 0 0 0.95em 0;
+/* GIF: bottom layer */
+.ms-panel-inner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmhmbndnanF3ank4dHBxd29hbWczNzRnbnRxOXJuMzU2dTFreTdoMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pWhWtKdqwOAco/giphy.gif') center center/cover no-repeat;
+  opacity: 0.9;
+  pointer-events: none;
 }
 
-.ms-text p:last-child {
-  margin-bottom: 0;
+/* Gradient: middle layer, overlays the gif */
+.ms-panel-inner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(160deg, #8b008b 0%, #32174d 20%, #1d2951 60%, #09162a 80%);
+  opacity: 0.8; /* Adjust for more/less blue, 0.9-0.96 works well */
+  pointer-events: none;
 }
 
-/* Mochi red emphasis */
-.ms-text b,
-.ms-text strong {
-  color: #d64a5f;
+.ms-panel-scroll {
+  position: relative;
+  z-index: 2;
+  max-height: 420px; /* matches art's min-height */
+  overflow-y: auto;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  padding-right: 6px;
+  text-shadow: 0 2px 6px #000A;
+}
+
+.ms-panel-scroll b {
+  color: #fa6b7c; /* Red for bold */
   font-weight: 700;
 }
 
-/* Scrollbar (subtle, cosmic) */
-.ms-text::-webkit-scrollbar {
+.ms-panel-scroll p {
+  margin: 0 0 1.1em 0;
+}
+
+.ms-panel-scroll p:last-child {
+  margin-bottom: 0;
+}
+
+/* Custom scrollbar for panels */
+.ms-panel-scroll::-webkit-scrollbar {
   width: 8px;
 }
-
-.ms-text::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 255, 255, 0.25);
-  border-radius: 4px;
+.ms-panel-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.18);
+  border-radius: 8px;
+}
+.ms-panel-scroll::-webkit-scrollbar-track {
+  background: transparent;
 }
 
-.ms-text::-webkit-scrollbar-track {
-  background-color: rgba(255, 255, 255, 0.05);
-}
-
-/* Mobile: hide image, keep text */
-@media (max-width: 720px) {
-  .ms-frame {
-    display: block;
+/* Responsive - on mobile stack, image above text, shrink art */
+@media (max-width: 700px) {
+  .ms-container {
+    flex-direction: column;
+    max-width: 96vw;
+    min-height: unset;
   }
-
-  .ms-left {
-    display: none;
+  .ms-art {
+    width: 100%;
+    min-height: 260px;
+    max-height: 320px;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 0;
   }
-
-  .ms-text {
-    overflow: visible;
-    box-shadow: none; /* optional: flatter on mobile */
+  .ms-panel-inner {
+    border-radius: 0 0 10px 10px;
+    padding: 20px 10px;
+  }
+  .ms-panel-scroll {
+    max-height: 220px;
+    font-size: 13px;
+    padding-right: 0;
   }
 }
