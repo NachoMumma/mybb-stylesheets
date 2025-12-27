@@ -1,49 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap');
 
-.kbr-hero {
-  position: relative;
+.kbr-card {
   max-width: 900px;
   margin: 0 auto;
+  position: relative;
   box-sizing: border-box;
+
+  /* Background art */
+  background: url('https://f2.toyhou.se/file/f2-toyhou-se/images/112371109_irLmBUSYkG7nrtT.png') no-repeat center center;
+  background-size: cover;
+
+  /* Modern sizing: keeps the image proportion without needing extra markup */
+  aspect-ratio: 3 / 2; /* tweak if you want it taller/shorter */
 }
 
-.kbr-hero-img {
+/* Fallback for older forum browsers that ignore aspect-ratio */
+.kbr-card::before {
+  content: "";
   display: block;
-  width: 100%;
-  height: auto;
+  padding-top: 66.6667%; /* matches 3:2 ratio */
 }
 
-/* Overlay container pinned to image height */
 .kbr-panel {
   position: absolute;
   left: 4%;
-  top: 25px;
-  bottom: 25px;
+  top: 35px;
+  bottom: 35px;
   width: 46%;
   box-sizing: border-box;
 
+  /* This creates a definite vertical "lane" to scroll within */
   display: flex;
+  align-items: center;   /* vertical center when short */
   overflow: hidden;
 }
 
-/* Glass panel that centers when short */
 .kbr-panel-inner {
   width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.25);
-  padding: 1rem;
   box-sizing: border-box;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.25);
 
+  /* Key: inner can be shorter than the lane, but never taller */
+  max-height: 100%;
+
+  /* Needed so the scroll child can size correctly */
   display: flex;
   flex-direction: column;
-  justify-content: center; /* vertical centering when short */
   overflow: hidden;
 }
 
-/* Scroll region */
-.kbr-panel-scroll {
-  max-height: 100%;
+.kbr-scroll {
+  /* Key: this becomes the scroll container once inner hits max-height */
   overflow: auto;
+  max-height: 100%;
+
+  /* Flexbox scrolling gotcha: prevents overflow from escaping */
+  min-height: 0;
 
   font-family: 'Noto Serif', serif;
   font-size: 0.95rem;
@@ -51,29 +64,31 @@
   overflow-wrap: break-word;
 }
 
-/* Gold bold text */
-.kbr-panel-scroll b {
+/* Paragraph spacing */
+.kbr-scroll p {
+  margin: 0 0 0.9em 0;
+}
+
+.kbr-scroll p:last-child {
+  margin-bottom: 0;
+}
+
+/* Gold bold */
+.kbr-scroll b {
   color: #c9a24d;
   font-weight: 700;
 }
 
 /* Subtle scrollbar */
-.kbr-panel-scroll::-webkit-scrollbar {
+.kbr-scroll::-webkit-scrollbar {
   width: 8px;
 }
 
-.kbr-panel-scroll::-webkit-scrollbar-thumb {
+.kbr-scroll::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.25);
   border-radius: 4px;
 }
 
-.kbr-panel-scroll::-webkit-scrollbar-track {
+.kbr-scroll::-webkit-scrollbar-track {
   background-color: rgba(0, 0, 0, 0.05);
-}
-.kbr-panel-scroll p {
-  margin: 0 0 0.9em 0;
-}
-
-.kbr-panel-scroll p:last-child {
-  margin-bottom: 0;
 }
