@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.lux-stream {
+  width: 600px;
+  padding: 0 0 850px 0; /* top, right, bottom, left */
+  border: 5px solid #283E1E;
+  border-radius: 0px 0px 300px 300px;
+  background: url('https://f2.toyhou.se/file/f2-toyhou-se/images/112375437_JzckNb5Zi5k5cdm.png') no-repeat center bottom;
+  background-size: 600px auto;
+  background-color: #283E1E;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.lux-stream-inner {
+  border-width: 2px 2px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #6b8e23 60%, transparent 100%) 1;
+  margin: 15px 15px 0 15px;
+  padding: 30px;
+  text-align: justify;
+  font-size: 15px;
+  line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+.lux-stream-inner b {
+  color: #6b8e23;
+  font-weight: 700;
+}
+
+.lux-stream-credit {
+  display: block;
+  color: #6b8e23;
+  font-size: 11px;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 8px;
+  letter-spacing: 1px;
+  opacity: 0.7;
+}
